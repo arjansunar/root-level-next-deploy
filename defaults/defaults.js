@@ -23,6 +23,20 @@ export const defaultStyles = {
             lineHeight: '1.5rem'
         },
     },
+    contactSection: {
+        title: {
+            fontSize: '4rem',
+            fontWeight: 'bold',
+            lineHeight: '4.7rem',
+            textColor: '#008080'
+        },
+        subTitle: {
+            fontSize: '1.5rem',
+            fontWeight: '400',
+            lineHeight: '2rem'
+        },
+
+    },
     navStyles: {
         navColors: {
             background: '#fff',

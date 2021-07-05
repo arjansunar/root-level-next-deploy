@@ -18,7 +18,7 @@ export const Nav = styled.nav`
     top: 0; 
     z-index: 10;
     overflow: hidden;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 1px solid ${defaultStyles.brandColor};
     background: ${navColors.background};
     color:  ${navColors.textColor};
     @media screen and (max-width: 960px){

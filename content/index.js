@@ -36,7 +36,10 @@ export const content = {
             // bg='#28367B'
         }
     },
-
+    contactPage: {
+        title: 'Let’s build together',
+        subtitle: 'Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.',
+    }
 
 
 
