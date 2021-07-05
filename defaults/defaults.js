@@ -42,5 +42,34 @@ export const defaultStyles = {
             background: '#fff',
             textColor: '#767683'
         }
+    },
+    blogStyles: {
+        card: {
+            fontFamily: "'Montserrat', sans-serif",
+
+            title: {
+                fontSize: '1.25rem',
+                fontWeight: '600',
+                lineHeight: '1.75rem',
+                color: '#1E2A37'
+            },
+            excerpt: {
+                fontSize: '1.5rem',
+                fontWeight: '400',
+                lineHeight: '2rem'
+            },
+            category: {
+                fontSize: '0.875rem',
+                fontWeight: '400',
+                lineHeight: '1rem',
+                color: '#ACAFBA',
+            },
+            subInfo: {
+                fontSize: '0.75rem',
+                fontWeight: '400',
+                lineHeight: '1rem',
+                color: '#43475A'
+            }
+        }
     }
 }
