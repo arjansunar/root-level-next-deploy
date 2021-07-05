@@ -1,7 +1,14 @@
+import Hero from '../components/HeroSection'
+import { content } from '../content'
+
+const whatWeDoContent = { ...content.whatWeDoPage }
+
 function WhatWeDo() {
     return (
         <div>
-            what we do
+            <Hero
+                {...whatWeDoContent.heroSection}
+            />
         </div>
     )
 }

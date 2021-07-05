@@ -1,7 +1,11 @@
+// import { content } from '../content'
+
+// const contactContent = { ...content.aboutPage }
+
 function Contact() {
     return (
         <div>
-            this is contact
+            contact
         </div>
     )
 }

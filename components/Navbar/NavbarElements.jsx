@@ -4,7 +4,7 @@ const navColors = {
     ...defaultStyles.navStyles.navColors
 }
 
-console.log("navColors", navColors)
+// console.log("navColors", navColors)
 
 export const Nav = styled.nav`
     height:90px;
