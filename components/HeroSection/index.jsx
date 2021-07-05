@@ -1,16 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
 import {
     Wrapper,
     HeroSubtitle,
     HeroTitle,
     TextSection,
-    HeroP
+    HeroP,
+    HeroPicWrapper
 } from './HeroSectionElements'
 
-function Hero({ imageProps, title, subtitle, descrition, bg }) {
-    // const imageProps = {
-    //     imageURL: image1,
-    //     overlay: '#28367B'
-    // }
+function Hero({ imageProps, title, subtitle, description, bg, heroPic }) {
     return (
         <section>
             <Wrapper imageProps={imageProps} bg={bg} >
@@ -23,9 +21,14 @@ function Hero({ imageProps, title, subtitle, descrition, bg }) {
                         {subtitle}
                     </HeroSubtitle>
                     <HeroP>
-                        {descrition}
+                        {description}
                     </HeroP>
                 </TextSection>
+                {heroPic ?
+                    <HeroPicWrapper >
+                        <img src={heroPic} alt="" />
+                    </HeroPicWrapper>
+                    : ''}
             </Wrapper>
         </section>
     )

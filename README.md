@@ -1,3 +1,16 @@
+# Root-level-website
+
+## Steps to work on the project 
+
+1. ### Clone the repo 
+1. ### Change directory into the project i.e. `cd <project name>`
+1. ### Run `npm i ` to install the dependencies 
+
+---
+  
+ ### `Note:` changes to the content can be done by editing the content page [here](./content/content.js)
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
