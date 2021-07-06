@@ -1,5 +1,5 @@
 import { content } from '../content'
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 import { defaultStyles } from '../defaults/defaults'
 import ContactForm from '../components/Form'
 

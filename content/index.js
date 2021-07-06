@@ -1,14 +1,12 @@
 export const content = {
     blogPage: {
         heroSection: {
-            imageProps: {
-                imageURL: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80',
-                overlay: '#28367B'
-            },
-            title: 'How to Get Started With react ?',
-            subtitle: 'The world is changing faster than ever. We enable big and small companies alike to move at startup speed.',
+            title: 'Blog',
+            subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
             description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
-            // bg: 'red'
+            bg: '#008080',
+            heroPic: "/assets/blog-hero-pic.svg"
+
         }
     },
     whatWeDoPage: {

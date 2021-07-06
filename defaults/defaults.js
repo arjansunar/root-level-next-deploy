@@ -54,9 +54,10 @@ export const defaultStyles = {
                 color: '#1E2A37'
             },
             excerpt: {
-                fontSize: '1.5rem',
+                fontSize: '1rem',
                 fontWeight: '400',
-                lineHeight: '2rem'
+                lineHeight: '1.5rem',
+                color: '#43475A'
             },
             category: {
                 fontSize: '0.875rem',

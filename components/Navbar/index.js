@@ -50,7 +50,7 @@ function NavBar({ toggle }) {
                     </NavMenu>
                     <NavButton
                         onClick={() => router.push("/contact")}
-                        onMouseOver={
+                        onMouseEnter={
                             () => setHover(true)
                         }
                         onMouseLeave={

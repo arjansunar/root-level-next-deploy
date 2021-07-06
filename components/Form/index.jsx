@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components"; { }
 import { useState } from "react";
 import { NavButton } from "../Navbar/NavbarElements";
+import { IoIosArrowForward as Arrow } from 'react-icons/io'
 import { HiArrowRight as ArrowHover } from 'react-icons/hi'
 import { defaultStyles } from '../../defaults/defaults';
 
@@ -16,6 +17,7 @@ const initalState = {
 export default function ContactForm() {
     const [state, setState] = useState(initalState);
     const [error, setError] = useState('');
+    const [hover, setHover] = useState(false)
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -89,8 +91,15 @@ export default function ContactForm() {
                     </StyledError>
                 )}
                 <ButtonWrapper>
-                    <StyledButton type="submit">Send Message
-                        Get Started <span>{<ArrowHover />}</span>
+                    <StyledButton type="submit"
+                        onMouseEnter={
+                            () => setHover(true)
+                        }
+                        onMouseLeave={
+                            () => setHover(false)
+                        }
+                    >Send message
+                        <span>{hover ? <ArrowHover /> : <Arrow />}</span>
                     </StyledButton>
                 </ButtonWrapper>
             </StyledForm>
@@ -169,11 +178,25 @@ const StyledTextArea = styled.textarea`
 //   box-sizing: border-box;
 // `;
 const StyledButton = styled(NavButton)`
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.5rem;
     width: fit-content;
     max-width: none;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     background: ${defaultStyles.brandColor};
     color: #fff;
+    border-radius: 500px;
+    text-transform: none;
+
+    @media screen{
+        display:flex;
+        align-items:center
+    }
+    & span{
+        /* margin-top:1rem; */
+    }
+
 `
 const StyledError = styled.div`
   color: red;

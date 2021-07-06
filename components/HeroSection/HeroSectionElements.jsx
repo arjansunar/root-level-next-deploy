@@ -22,7 +22,7 @@ export const Wrapper = styled.div`
     /* min-height: 75vh; */
     display: flex;
     color: ${defaultStyles.textColor};
-    padding: 10rem 4.375rem 5.375rem 4.375rem ;
+    padding: 5rem 8rem 5rem 4rem ;
     position: relative;
     background: ${({ bg }) => (bg ? `${bg}` : '#102B7B')};
     ${({ imageProps }) => ((imageProps && imageProps.imageURL) && backgroundStylesWithImage)}
@@ -30,6 +30,8 @@ export const Wrapper = styled.div`
     @media screen and (max-width: 1200px){
         flex-direction: column;
         align-items: center;
+        padding: 5rem 15%;
+
     }
    
 `
@@ -75,5 +77,9 @@ export const HeroPicWrapper = styled.div`
     @media screen and (max-width: 1200px){
         margin-top: 4rem;
     }
-  
+
+    & img{
+        width: 100%;
+        max-width: 500px;
+    } 
 `
