@@ -1,7 +1,9 @@
 import { sanityClient } from "../../lib/sanity";
 
+const apiToken = process.env.SANITY_API_TOKEN
+
 sanityClient.config({
-  token: process.env.SANITY_API_TOKEN,
+  token: apiToken,
 });
 
 export default async function likeButtonHandler(req, res) {
