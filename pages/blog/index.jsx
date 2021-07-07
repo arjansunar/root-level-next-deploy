@@ -2,6 +2,7 @@ import Hero from "../../components/HeroSection"
 import { content } from '../../content'
 import BlogCard from "../../components/Blog/BlogCard"
 import { GridContainer, FlexContainer } from "../../components/utilityStyles"
+import { sanityClient } from "../../lib/sanity";
 
 const blogContent = { ...content.blogPage }
 
@@ -63,15 +64,19 @@ const blogs = [
 
 ]
 
-
-function index() {
-
+function index({ posts: blogs }) {
+    // console.log("posts", posts)
     return (
         <div>
             <Hero
                 {...blogContent.heroSection}
             />
             <FlexContainer>
+                {/* <GridContainer>
+                    {blogs.map((props, index) =>
+                        <BlogCard key={index} {...props} />
+                    )}
+                </GridContainer> */}
                 <GridContainer>
                     {blogs.map((props, index) =>
                         <BlogCard key={index} {...props} />
@@ -84,3 +89,26 @@ function index() {
 
 
 export default index
+
+//query 
+const postQuery = `*[_type == "post"]{
+    _id,
+    title,
+    slug,
+    mainImage,
+    publishedAt,
+    excerpt,
+    likes
+  }`;
+
+export async function getStaticProps() {
+    const posts = await sanityClient.fetch(postQuery);
+    // console.log(posts)
+    const { _id,
+        title,
+        slug,
+        mainImage: imageURL,
+        excerpt } = posts
+
+    return { props: { posts } };
+}
