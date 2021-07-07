@@ -72,5 +72,30 @@ export const defaultStyles = {
                 color: '#43475A'
             }
         }
+    },
+    aboutSection: {
+        fontFamily: "'Montserrat', sans-serif",
+
+        tag: {
+            fontSize: '1rem',
+            fontWeight: '600',
+            lineHeight: '1.5rem',
+            color: '#008080'
+        },
+        title: {
+            fontSize: '3rem',
+            fontWeight: '600',
+            lineHeight: '3.75rem',
+            color: '#00487C'
+
+        },
+        description: {
+            fontSize: '1.5rem',
+            fontWeight: 500,
+            lineHeight: '2rem',
+            color: '#212529'
+
+        },
+        textBgColor: '#E4FFFC',
     }
 }

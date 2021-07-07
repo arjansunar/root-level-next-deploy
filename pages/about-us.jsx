@@ -1,6 +1,9 @@
 import Hero from "../components/HeroSection"
 import { content } from '../content'
+import Section from '../components/About/Section'
+import { SectionsWrapper } from '../components/About/SectionElements'
 
+const sectionData = [...content.aboutPage.sections];
 const aboutContent = { ...content.aboutPage }
 
 function About() {
@@ -9,6 +12,12 @@ function About() {
             <Hero
                 {...aboutContent.heroSection}
             />
+            <SectionsWrapper>
+
+                {sectionData.map((section, i) =>
+                    <Section key={i} {...section} />
+                )}
+            </SectionsWrapper>
         </div>
     )
 }
