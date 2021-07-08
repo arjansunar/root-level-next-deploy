@@ -97,5 +97,22 @@ export const defaultStyles = {
 
         },
         textBgColor: '#E4FFFC',
+    },
+    serviceSection: {
+        title: {
+            fontFamily: "'Poppins', sans-serif",
+            fontSize: '2.5rem',
+            fontWeight: 500,
+            lineHeight: '3.75rem',
+
+        },
+        description: {
+            fontFamily: "'Montserrat', sans-serif",
+            fontSize: '1.25rem',
+            fontWeight: 400,
+            lineHeight: '2rem',
+
+        },
+        color: '#000'
     }
 }

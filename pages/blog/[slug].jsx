@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { PortableText, sanityClient, urlFor, usePreviewSubscription } from "../../lib/sanity";
 
-function Post({ data, preview }) {
+function Post({ data }) {
 
     // const { data: post } = usePreviewSubscription(postQuery, {
 

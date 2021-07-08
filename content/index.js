@@ -6,7 +6,6 @@ export const content = {
             description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
-
         }
     },
     whatWeDoPage: {
@@ -20,10 +19,43 @@ export const content = {
     servicesPage: {
         heroSection: {
             title: 'Services',
-            subtitle: 'In the new world, the companies that build, learn, and evolve the fastest will win.',
-            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.'
-            // bg='#28367B'
-        }
+            subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
+            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
+            bg: '#008080',
+            heroPic: "/assets/blog-hero-pic.svg"
+        },
+        sections: [
+            {
+                imageURL: '/assets/app-development.jpeg',
+                isImageRight: false,
+                title: 'App Development',
+                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                bgColor: ''
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                isImageRight: true,
+                title: 'App Development',
+                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                bgColor: '#F4FFFF'
+
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                isImageRight: false,
+                title: 'App Development',
+                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                bgColor: ''
+
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                isImageRight: true,
+                title: 'App Development',
+                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                bgColor: '#F4FFFF'
+            },
+        ]
     },
     contactPage: {
         title: 'Let’s build together',
