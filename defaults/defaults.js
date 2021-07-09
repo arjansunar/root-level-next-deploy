@@ -114,5 +114,23 @@ export const defaultStyles = {
 
         },
         color: '#000'
+    },
+    whatWeDo: {
+        infoSection: {
+            title: {
+                fontFamily: "'Poppins', sans-serif",
+                fontSize: '3rem',
+                fontWeight: 700,
+                lineHeight: '3.75rem',
+                color: '#102B7B'
+            },
+            description: {
+                fontFamily: "'Montserrat', sans-serif",
+                fontSize: '1.25rem',
+                fontWeight: 400,
+                lineHeight: '1.75rem',
+                color: '#000'
+            }
+        }
     }
 }
