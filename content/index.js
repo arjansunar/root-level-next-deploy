@@ -10,10 +10,17 @@ export const content = {
     },
     whatWeDoPage: {
         heroSection: {
-            title: 'What we do ',
-            subtitle: 'The world is changing faster than ever. We enable big and small companies alike to move at startup speed.',
-            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.'
-            // bg='#28367B'
+            title: 'One step ahead',
+            subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
+            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
+            bg: '#008080',
+            heroPic: "/assets/blog-hero-pic.svg"
+        },
+        imageInfoSection: {
+            imageURL: '/assets/app-development.jpeg',
+            title: 'Requirement Gathering',
+            desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
+                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
         }
     },
     servicesPage: {

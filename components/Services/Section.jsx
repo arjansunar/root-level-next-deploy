@@ -23,7 +23,7 @@ function Section({ imageURL, isImageRight = false, title, description, bgColor }
         <SectionCenter bg={bgColor}>
             <SectionWrapper>
                 <ImageWrapper isRight={isImageRight}>
-                    <Img src={imageURL} alt={title} height="480px" width='480px' style={{ objectFit: 'cover' }} />
+                    <Img src={imageURL} alt={title} height="480px" width='480px' />
                 </ImageWrapper>
                 <TextWrapper>
                     <Title>{title}</Title>
