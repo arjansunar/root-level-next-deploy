@@ -10,7 +10,7 @@ export const content = {
     },
     whatWeDoPage: {
         heroSection: {
-            title: 'Blog',
+            title: 'One step ahead',
             subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
             description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
             bg: '#008080',
