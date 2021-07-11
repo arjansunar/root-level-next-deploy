@@ -47,7 +47,7 @@ const BgDecor = styled.div`
     bottom:0;
     z-index: -1;
     clip-path: polygon(0 46%, 100% 1%, 100% 100%, 0% 100%);
-
+    margin-bottom: -1px;
 `
 function Contact() {
     return (
