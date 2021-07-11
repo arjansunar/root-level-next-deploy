@@ -4,6 +4,8 @@ import { defaultStyles } from '../defaults/defaults';
 
 import NavBar from '../components/Navbar/'
 import SideBar from '../components/Sidebar'
+import Footer from "../components/Footer";
+
 const GlobalStyle = createGlobalStyle`
   *,*::before,*::after{
     padding: 0;
@@ -31,6 +33,7 @@ function MyApp({ Component, pageProps }) {
       <NavBar toggle={toggle} />
       <SideBar isOpen={isOpen} toggle={toggle} />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

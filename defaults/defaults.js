@@ -3,6 +3,10 @@ export const defaultStyles = {
     brandColor: "#35B5AC",
     black: '#000',
     textColor: '#fff',
+    footer: {
+        background: '#000',
+        color: "#fff"
+    },
     heroSection: {
         title: {
             fontSize: '4.5rem',
