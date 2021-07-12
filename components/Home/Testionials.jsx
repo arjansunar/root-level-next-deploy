@@ -5,7 +5,7 @@ import Image from 'next/image'
 const testimonialContent = [
     {
         description: '“Arcu mattis vel nunc in. Metus pretium egestas fermentum ut adipiscing vitae lorem nulla varius. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliquet in ac us. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliq sit consequat ”',
-        authorPic: 'hello hello eheelpajfkajdfajdbadshfadljsglakjdfhaklsdjfhakdfaldjfhlksjch    ',
+        authorPic: '/assets/home/testimonials-profile.jpeg',
         authorName: 'Richard Feynman',
         authorPosition: 'CEO, Saleways',
     }
@@ -13,16 +13,18 @@ const testimonialContent = [
 
 function Testionials() {
     return (
-        <div>
+        <Container>
             <Title>What our Client say</Title>
             <Testionial {...testimonialContent[0]} />
-        </div>
+        </Container>
     )
 }
 
 export default Testionials
 
-
+const Container = styled.div`
+    margin-top: 10rem;
+`
 //single testimonial 
 function Testionial({ description, authorPic, authorName, authorPosition }) {
     console.log(description);
@@ -36,7 +38,7 @@ function Testionial({ description, authorPic, authorName, authorPosition }) {
             </Desc>
             <AuthorWrapper>
                 <Profile>
-                    {authorPic}
+                    <Image src={authorPic} height="88px" width="88px" alt='user profile pic' />
                 </Profile>
                 <InfoWrapper>
                     <Name>
@@ -60,7 +62,7 @@ const QuoteDecor = styled.div`
     place-content: center;
 `
 const Desc = styled.p`
-    margin-top: 1.5rem;
+    margin-top: 2.5rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -68,9 +70,10 @@ const Desc = styled.p`
     line-height: 40px;
     letter-spacing: 0em;
     text-align: center;
+    max-width: 980px;
 `
 const AuthorWrapper = styled.div`
-    margin-top: 1rem;
+    margin-top: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,15 +82,22 @@ const AuthorWrapper = styled.div`
 
 const Profile = styled.div`
     margin-right: 8px;
-    max-width:88px;
-    word-wrap: break-word;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+
+    & img{
+        object-fit: cover;
+    }
 `
 
 const InfoWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin-left: 1rem;
 `
 
 const Name = styled.h4`

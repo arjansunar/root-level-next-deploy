@@ -41,7 +41,7 @@ export const Title = styled.h2`
 `
 const FWrapper = styled.div`
     padding: 0 6rem;
-    margin: 3rem 0 5rem 0;
+    margin: 10rem 0 5rem 0;
     
     //make it responsive here 
     @media screen and (max-width: 750px ){
