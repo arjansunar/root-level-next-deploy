@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Accordion from "./Accordion";
+import Accordion from "./utility/Accordion";
 
 const questionAnswer = [
     {
@@ -29,7 +29,7 @@ function FAQ() {
 
 export default FAQ
 
-const Title = styled.h2`
+export const Title = styled.h2`
     font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
