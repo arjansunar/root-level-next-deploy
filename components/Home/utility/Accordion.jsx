@@ -1,11 +1,10 @@
 import { useState } from "react"
 import styled, { css } from "styled-components"
-import { defaultStyles } from '../../defaults/defaults'
+import { defaultStyles } from '../../../defaults/defaults'
 
 function Accordian({ question, answer }) {
     const [showAnswer, setShowAnswer] = useState(false)
 
-    console.log("show ?", showAnswer)
     return (
         <Wrapper>
             <QuestionWrapper onClick={() => setShowAnswer(!showAnswer)} active={showAnswer}>
@@ -51,7 +50,7 @@ const deactiveStyles = css`
     }
 `
 const QuestionWrapper = styled.div`
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -94,10 +93,10 @@ const hideAnswer = css`
 `
 const AnswerWrapper = styled.div`
     //font styles
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;

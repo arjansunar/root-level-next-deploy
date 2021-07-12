@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Accordion from "./Accordion";
+import Accordion from "./utility/Accordion";
 
 const questionAnswer = [
     {
@@ -29,7 +29,7 @@ function FAQ() {
 
 export default FAQ
 
-const Title = styled.h2`
+export const Title = styled.h2`
     font-family: Montserrat;
     font-size: 40px;
     font-style: normal;
@@ -41,7 +41,7 @@ const Title = styled.h2`
 `
 const FWrapper = styled.div`
     padding: 0 6rem;
-    margin: 3rem 0 5rem 0;
+    margin: 10rem 0 5rem 0;
     
     //make it responsive here 
     @media screen and (max-width: 750px ){
