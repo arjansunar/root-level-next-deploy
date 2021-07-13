@@ -2,18 +2,10 @@ import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled from 'styled-components';
 
-function HomeCarousel() {
+function HomeCarousel({ children }) {
     return (
         <StyledCarousel>
-            <div>
-                hello
-            </div>
-            <div>
-                hello
-            </div>
-            <div>
-                hello
-            </div>
+            {children}
         </StyledCarousel>
     )
 }
@@ -21,5 +13,5 @@ function HomeCarousel() {
 export default HomeCarousel
 
 const StyledCarousel = styled(Carousel)`
-    background-color: red;
+    /* background-color: red; */
 `
