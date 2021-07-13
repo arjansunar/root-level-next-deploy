@@ -6,7 +6,20 @@ export const content = {
             description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
-        }
+        },
+        testimonials: [{
+            description: '“Arcu mattis vel nunc in. Metus pretium egestas fermentum ut adipiscing vitae lorem nulla varius. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliquet in ac us. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliq sit consequat ”',
+            authorPic: '/assets/home/testimonials-profile.jpeg',
+            authorName: 'Richard Feynman',
+            authorPosition: 'CEO, Saleways',
+        },
+        {
+            description: '“Arcu mattis vel nunc in. Metus pretium egestas fermentum ut adipiscing vitae lorem nulla varius. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliquet in ac us. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliq sit consequat ”',
+            authorPic: '/assets/home/testimonials-profile.jpeg',
+            authorName: 'Richard Feynman',
+            authorPosition: 'CEO, Saleways',
+        },
+        ]
     },
     blogPage: {
         heroSection: {

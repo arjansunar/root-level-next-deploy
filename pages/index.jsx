@@ -3,8 +3,7 @@ import Hero from '../components/HeroSection'
 import FAQ from '../components/Home/FAQ'
 import IconCards from '../components/Home/IconCards'
 import PartnerSection from '../components/Home/PartnerSection'
-import Testionials from '../components/Home/Testionials'
-import HomeCarousel from '../components/Home/utility/Carousel'
+import Testimonials from '../components/Home/Testimonials'
 import { content } from '../content'
 
 const homeContent = { ...content.homePage }
@@ -23,7 +22,7 @@ export default function Home() {
       />
       <PartnerSection />
       <IconCards />
-      <Testionials />
+      <Testimonials />
       <FAQ />
     </div>
   )

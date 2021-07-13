@@ -1,26 +1,28 @@
 import styled from "styled-components";
 import { Title } from "./FAQ";
 import Image from 'next/image'
+import { content } from "../../content";
+import HomeCarousel from './utility/Carousel'
 
 const testimonialContent = [
-    {
-        description: '“Arcu mattis vel nunc in. Metus pretium egestas fermentum ut adipiscing vitae lorem nulla varius. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliquet in ac us. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliq sit consequat ”',
-        authorPic: '/assets/home/testimonials-profile.jpeg',
-        authorName: 'Richard Feynman',
-        authorPosition: 'CEO, Saleways',
-    }
+    ...content.homePage.testimonials
 ]
 
-function Testionials() {
+function Testimonials() {
     return (
         <Container>
             <Title>What our Client say</Title>
-            <Testimonial {...testimonialContent[0]} />
+            <HomeCarousel>
+                {testimonialContent.map((val, i) =>
+                    <Testimonial {...val} key={i} />
+                )}
+            </HomeCarousel>
+
         </Container>
     )
 }
 
-export default Testionials
+export default Testimonials
 
 const Container = styled.div`
     margin-top: 10rem;
@@ -55,6 +57,8 @@ function Testimonial({ description, authorPic, authorName, authorPosition }) {
 const Wrapper = styled.div`
     display: grid;
     place-content: center;
+    margin-bottom: 3.5rem;
+
 `
 const QuoteDecor = styled.div`
     display: grid;
@@ -76,7 +80,6 @@ const AuthorWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
 `
 
 const Profile = styled.div`
@@ -85,7 +88,6 @@ const Profile = styled.div`
     width: 4.5rem;
     border-radius: 50%;
     overflow: hidden;
-
     & img{
         object-fit: cover;
     }
