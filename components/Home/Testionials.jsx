@@ -15,7 +15,7 @@ function Testionials() {
     return (
         <Container>
             <Title>What our Client say</Title>
-            <Testionial {...testimonialContent[0]} />
+            <Testimonial {...testimonialContent[0]} />
         </Container>
     )
 }
@@ -26,8 +26,7 @@ const Container = styled.div`
     margin-top: 10rem;
 `
 //single testimonial 
-function Testionial({ description, authorPic, authorName, authorPosition }) {
-    console.log(description);
+function Testimonial({ description, authorPic, authorName, authorPosition }) {
     return (
         <Wrapper>
             <QuoteDecor>
