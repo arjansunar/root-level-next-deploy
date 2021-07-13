@@ -19,6 +19,12 @@ export const content = {
             authorName: 'Richard Feynman',
             authorPosition: 'CEO, Saleways',
         },
+        {
+            description: '“Arcu mattis vel nunc in. Metus pretium egestas fermentum ut adipiscing vitae lorem nulla varius. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliquet in ac us. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliq sit consequat ”',
+            authorPic: '/assets/home/testimonials-profile.jpeg',
+            authorName: 'Richard Feynman',
+            authorPosition: 'CEO, Saleways',
+        },
         ]
     },
     blogPage: {
@@ -95,7 +101,7 @@ export const content = {
             title: 'One step ahead',
             subtitle: 'Ac sed auctor vel volutpat facilisis nunc. Dictum eget ultrices faucibus eleifend est sit tempus. Porttitor neque etiam turpis gravida scelerisque sed.',
             description: 'We care about who we work for and the quality of work we deliver, and the impact that makes. And that shows in the results we produce together. Leapfrog is founded on a commitment to customer happiness , pride in craftsmanship, and making a difference.',
-            // bg='#28367B'
+            bg: '#008080',
             heroPic: "/assets/aboutus-hero-pic.svg"
         },
         sections: [

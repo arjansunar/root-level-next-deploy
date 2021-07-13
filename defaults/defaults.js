@@ -9,7 +9,7 @@ export const defaultStyles = {
     },
     heroSection: {
         title: {
-            fontSize: '4.5rem',
+            fontSize: '50px',
             fontWeight: 'bold',
             lineHeight: '5.5rem'
         },
