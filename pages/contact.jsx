@@ -2,6 +2,7 @@ import { content } from '../content'
 import styled from 'styled-components'
 import { defaultStyles } from '../defaults/defaults'
 import ContactForm from '../components/Form'
+import FAQ from '../components/Home/FAQ'
 
 const contactContent = { ...content.contactPage }
 
@@ -63,8 +64,9 @@ function Contact() {
                 </TextWrapper>
                 <ContactForm />
                 <BgDecor />
-            </ContactWrapper>
 
+            </ContactWrapper>
+            <FAQ />
         </div>
     )
 }
