@@ -1,16 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
+import { MainImage, PostContent, PostHeadSection, PostInfo, PostWrapper, Title } from "../../components/Blog/PostElements";
 import { PortableText, sanityClient, urlFor, usePreviewSubscription } from "../../lib/sanity";
 
+
 function Post({ data }) {
-
-    // const { data: post } = usePreviewSubscription(postQuery, {
-
-    //     params: { slug: data.post?.slug.current },
-    //     initialData: data,
-    //     enabled: preview,
-    // });
-
     const [likes, setLikes] = useState(data?.post?.likes);
     const addLike = async () => {
         const res = await fetch("/api/handle-like", {
@@ -23,20 +17,26 @@ function Post({ data }) {
         setLikes(returnedData.likes);
     };
     if (!data) return <div>Loading...</div>;
-    console.log("posts", data)
+    // console.log("posts", data)
     return (
-        <article className="recipe">
-            <h1>{data.post.title}</h1>
+        <PostWrapper className="recipe">
+            <PostHeadSection>
+                <PostInfo>
+                    JULY 13, 2021
+                </PostInfo>
+                <Title>{data.post.title}</Title>
 
-            <button className="like-button" onClick={addLike}>
+            </PostHeadSection>
+
+            {/* <button className="like-button" onClick={addLike}>
                 {likes} ❤️
-            </button>
+            </button> */}
 
-            <main className="content">
-                <img src={urlFor(data.post?.mainImage).url()} alt={data.post.title} />
+            <PostContent className="content">
+                <MainImage src={urlFor(data.post?.mainImage).url()} alt={data.post.title} width="820px" height="480px" />
                 <PortableText blocks={data.post.body} />
-            </main>
-        </article>
+            </PostContent>
+        </PostWrapper>
     )
 }
 
@@ -50,7 +50,6 @@ export async function getStaticPaths() {
         }
       }`
     );
-    console.log("paths: ", paths)
     return {
         paths,
         fallback: true,
