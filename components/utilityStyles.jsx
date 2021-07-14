@@ -21,3 +21,6 @@ export const FlexContainer = styled.div`
     align-items: center;
     padding: 1.5rem 5rem 2.5rem 5rem;
 `
+export const DefaultMarginedContainer = styled.section`
+    margin-top: ${({ top }) => (top ? top : '4rem')};
+`

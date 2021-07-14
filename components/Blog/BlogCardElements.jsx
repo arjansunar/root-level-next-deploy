@@ -28,6 +28,7 @@ export const ImagHoverStyles = css`
         left: 0;
         right: 0;
         background: #2c3e7ba6;
+        z-index:1
     }
 `
 export const ImageWrapper = styled.div`
@@ -45,6 +46,7 @@ export const TextHoverStyle = css`
     position:relative;
     top:-4rem;
     background: #fff;
+    z-index:2;
 `
 export const TextWrapper = styled.div`
     padding: 1.2rem;

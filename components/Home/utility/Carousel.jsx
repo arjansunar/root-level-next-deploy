@@ -31,7 +31,7 @@ function HomeCarousel({ children }) {
 export default HomeCarousel
 
 const StyledCarousel = styled(Carousel)`
-
+    position: relative;
 `
 
 const sharedButtonStyles = css`
