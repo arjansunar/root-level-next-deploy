@@ -4,7 +4,7 @@ import Image from "next/image"
 export const PostWrapper = styled.article`
     font-family: 'Montserrat', sans-serif;
     max-width: 820px;
-    margin: 2rem auto 7rem auto;
+    margin: 2rem 0 7rem 3rem;
 `
 export const PostHeadSection = styled.div`
     margin-top: 2rem;
@@ -78,4 +78,36 @@ export const PostContent = styled.main`
         }
     }
     
+`
+
+export const SectionWrapper = styled.section`
+    display: flex;
+    justify-content: center;
+`
+
+export const ShareButtonWrapper = styled.div`
+    /* background-color: red; */
+    margin-left: -3rem;
+`
+
+export const ButtonContainer = styled.div`
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    height:3rem;
+    width: 3rem;
+
+`
+export const LikeButton = styled.button`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+
+    & span{
+        margin-right: .3rem;
+        margin-top: 2px;
+    }
 `

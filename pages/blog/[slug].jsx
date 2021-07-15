@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
-import { MainImage, PostContent, PostHeadSection, PostInfo, PostWrapper, Title } from "../../components/Blog/PostElements";
-import { PortableText, sanityClient, urlFor, usePreviewSubscription } from "../../lib/sanity";
+import { MainImage, PostContent, PostHeadSection, PostInfo, PostWrapper, Title, ShareButtonWrapper, SectionWrapper, LikeButton, ButtonContainer } from "../../components/Blog/PostElements";
+import { PortableText, sanityClient, urlFor } from "../../lib/sanity";
 
+import { AiOutlineHeart as OutlinedHeart, AiFillHeart as FilledHeart } from "react-icons/ai"
 
 function Post({ data }) {
     const [likes, setLikes] = useState(data?.post?.likes);
@@ -19,24 +20,40 @@ function Post({ data }) {
     if (!data) return <div>Loading...</div>;
     // console.log("posts", data)
     return (
-        <PostWrapper className="recipe">
-            <PostHeadSection>
-                <PostInfo>
-                    JULY 13, 2021
-                </PostInfo>
-                <Title>{data.post.title}</Title>
+        <SectionWrapper>
+            <ShareButtonWrapper>
+                <ButtonContainer>
 
-            </PostHeadSection>
+                    <LikeButton>
+                        <span>
+                            {likes}
+                        </span>
+                        <OutlinedHeart />
+                    </LikeButton>
+                </ButtonContainer>
 
-            {/* <button className="like-button" onClick={addLike}>
+            </ShareButtonWrapper>
+
+            <PostWrapper className="recipe">
+
+                <PostHeadSection>
+                    <PostInfo>
+                        JULY 13, 2021
+                    </PostInfo>
+                    <Title>{data.post.title}</Title>
+
+                </PostHeadSection>
+
+                {/* <button className="like-button" onClick={addLike}>
                 {likes} ❤️
             </button> */}
 
-            <PostContent className="content">
-                <MainImage src={urlFor(data.post?.mainImage).url()} alt={data.post.title} width="820px" height="480px" />
-                <PortableText blocks={data.post.body} />
-            </PostContent>
-        </PostWrapper>
+                <PostContent className="content">
+                    <MainImage src={urlFor(data.post?.mainImage).url()} alt={data.post.title} width="820px" height="480px" />
+                    <PortableText blocks={data.post.body} />
+                </PostContent>
+            </PostWrapper>
+        </SectionWrapper>
     )
 }
 
