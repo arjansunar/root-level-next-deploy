@@ -6,7 +6,7 @@ import Image from 'next/image'
 function HomeCarousel({ children }) {
     return (
         <StyledCarousel setThumbs={false} showStatus={false}
-
+            autoPlay={true} infiniteLoop={true} interval="5000"
             renderArrowPrev={(onClickHandler, hasPrev, label) => (
                 hasPrev && <PrevButton onClick={onClickHandler} title={label} >
                     <Image src='/assets/home/buttonPrev.svg' width='10px' height='20px' alt='' />
