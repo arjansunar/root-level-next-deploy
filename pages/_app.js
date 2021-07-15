@@ -8,25 +8,16 @@ import NavBar from '../components/Navbar/'
 import SideBar from '../components/Sidebar'
 import Footer from "../components/Footer";
 
+import "../styles/globals.css"
 const GlobalStyle = createGlobalStyle`
-  *,*::before,*::after{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    font-family:  ${defaultStyles.fontFamily};
-  }
-  a, li, ul {
-    text-decoration: none;
-  }
+ 
 `;
 
-const LoaderWrapper = styled.div`
-  height: 100vh;
-  display: grid;
-  place-content: center;
-`
+// const LoaderWrapper = styled.div`
+//   height: 100vh;
+//   display: grid;
+//   place-content: center;
+// `
 const StyledLoader = styled(Loader)`
   margin-top: 50rem;
 `
@@ -66,9 +57,9 @@ function MyApp({ Component, pageProps }) {
       <GlobalStyle />
       {
         loading ?
-          <LoaderWrapper>
+          <div id='loaderWrapper'>
             <StyledLoader loading={loading} color="#4ab5ac" size={18} />
-          </LoaderWrapper>
+          </div>
           :
 
           <>
