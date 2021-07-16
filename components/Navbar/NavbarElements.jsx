@@ -74,7 +74,7 @@ export const NavMenu = styled.ul`
     display: flex;  
     height: 100%;
     flex-grow: 1;
-    max-width: 30rem;
+    max-width: 35rem;
     /* align-self: flex-start; */
     /* width: 40%; */
     justify-content: space-between;

@@ -136,5 +136,26 @@ export const defaultStyles = {
                 color: '#000'
             }
         }
+    },
+    careerPage: {
+        fontFamily: "'Montserrat', sans-serif",
+        whatWeOfferSection: {
+            title: {
+                fontSize: '2rem',
+                fontStyle: 'normal',
+                fontWeight: '600',
+                lineHeight: '48px',
+                letterSpacing: '0em',
+                textAlign: 'center',
+            },
+            subTitle: {
+                fontSize: '1rem',
+                fontStyle: 'normal',
+                fontWeight: '500',
+                lineHeight: '20px',
+                letterSpacing: '0em',
+                textAlign: 'center',
+            },
+        }
     }
 }

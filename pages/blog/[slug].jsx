@@ -21,7 +21,7 @@ function Post({ data }) {
     // console.log("posts", data)
     return (
         <SectionWrapper>
-            <ShareButtonWrapper>
+            {/* <ShareButtonWrapper>
                 <ButtonContainer>
 
                     <LikeButton>
@@ -32,9 +32,9 @@ function Post({ data }) {
                     </LikeButton>
                 </ButtonContainer>
 
-            </ShareButtonWrapper>
+            </ShareButtonWrapper> */}
 
-            <PostWrapper className="recipe">
+            <PostWrapper>
 
                 <PostHeadSection>
                     <PostInfo>

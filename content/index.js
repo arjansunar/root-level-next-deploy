@@ -5,7 +5,7 @@ export const content = {
             subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
             description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
             bg: '#008080',
-            heroPic: "/assets/blog-hero-pic.svg"
+            heroPic: "/assets/blog-hero-pic.svg",
         },
         testimonials: [{
             description: '“Arcu mattis vel nunc in. Metus pretium egestas fermentum ut adipiscing vitae lorem nulla varius. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliquet in ac us. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliq sit consequat ”',
@@ -127,5 +127,14 @@ export const content = {
                 description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.'
             },
         ]
+    },
+    careerPage: {
+        heroSection: {
+            title: 'Career',
+            subtitle: 'Ac sed auctor vel volutpat facilisis nunc. Dictum eget ultrices faucibus eleifend est sit tempus. Porttitor neque etiam turpis gravida scelerisque sed.',
+            description: 'We care about who we work for and the quality of work we deliver, and the impact that makes. And that shows in the results we produce together. Leapfrog is founded on a commitment to customer happiness , pride in craftsmanship, and making a difference.',
+            bg: '#008080',
+            heroPic: "/assets/aboutus-hero-pic.svg"
+        },
     }
 }
