@@ -3,7 +3,8 @@ import { defaultStyles } from '../../defaults/defaults';
 
 
 const backgroundStylesWithImage = css`
-    background: ${({ imageProps }) => (`url("${imageProps.imageURL}") no-repeat center`)} ;
+    background: ${({ imageProps }) => (`url("${imageProps.imageURL}") no-repeat`)} ;
+    background-size: cover;
     &::before{
         content: '';
         position: absolute;

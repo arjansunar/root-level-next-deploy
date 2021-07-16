@@ -47,6 +47,11 @@ function NavBar({ toggle }) {
                                 <NavLinks>About Us</NavLinks>
                             </Link>
                         </NavItem>
+                        <NavItem >
+                            <Link href="/career">
+                                <NavLinks>Career</NavLinks>
+                            </Link>
+                        </NavItem>
                     </NavMenu>
                     <NavButton
                         onClick={() => router.push("/contact")}
