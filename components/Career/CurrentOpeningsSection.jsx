@@ -121,10 +121,17 @@ const GridContainer = styled.div`
     grid-gap: 20px;
     max-width: 1180px;
     margin: 3rem auto 0 auto;
-
-    @media (max-width: 1000px){
+  
+    @media (max-width: 860px){
+        margin: 3rem auto 0 auto;
         display: flex;
         flex-direction: column;
         width: fit-content;
+    }
+
+    @media (max-width: 1000px) and (min-width: 860px){
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 780px;
+        
     }
 `
