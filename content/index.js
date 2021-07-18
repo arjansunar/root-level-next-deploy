@@ -1,9 +1,9 @@
 export const content = {
     homePage: {
         heroSection: {
-            title: 'Blog',
-            subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
-            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
+            title: 'The Root Level',
+            subtitle: 'We are a technology company enabling software-powered businesses to help them reengineer their business process. ',
+            description: ' We collaborate with our clients to implement technology strategies that generate business resilience and competitiveness. Clients can streamline their business conduction process and improve in-house business capabilities with the support of our highly capable team of developers, engineers, and designers.',
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg",
         },
@@ -43,6 +43,23 @@ export const content = {
                 question: `What's with the name The Root Level?`,
                 answer: `Well that's an interesting question you have. We opt-to treat every customer with the "super" tagline. As the name suggests, Root- the super user thus the name "The Root Level"`
             },
+        ],
+        cardContent: [
+            {
+                title: 'Agile Software Development',
+                description: 'All of our teams follow Scrum methodology, which has proven to give great results and helps to keep all project stakeholders in sync.',
+                imgPath: '/assets/home/agileDevelopment.svg'
+            },
+            {
+                title: 'Teamwork',
+                description: 'Having regular knowledge sharing sessions, code reviews and daily standups means all the team members are well aligned and no one needs to reinvent the wheel when it comes to implementing a similar feature to already existing ones.',
+                imgPath: '/assets/home/teamwork.svg'
+            },
+            {
+                title: 'Fully devoted to the Project',
+                description: 'The secret to success is the balance between enjoying what you do and taking the responsibility to do it in the most adept way. Even though we already have people on 24/7 support.',
+                imgPath: '/assets/home/devotion.svg'
+            },
         ]
     },
     blogPage: {
@@ -81,31 +98,45 @@ export const content = {
             {
                 imageURL: '/assets/app-development.jpeg',
                 isImageRight: false,
-                title: 'App Development',
-                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                title: 'Mobile App Development',
+                description: 'We offer native, hybrid, and cross-platform mobile application development services by building user-engaging experience mobile platforms that connect the brand with the users. Our analysts work with you to understand your business and help you transform your business ideas into the most user-friendly and interactive custom software solutions. ',
                 bgColor: ''
             },
             {
                 imageURL: '/assets/app-development.jpeg',
                 isImageRight: true,
-                title: 'App Development',
-                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                title: 'Web Development',
+                description: 'Our Web development services allow your company to automate processes and create web platforms for effective branding. Our design and development team offers your business a variety of services including web development, custom web apps development, UI/UX design, and SEO-friendly web design.  ',
                 bgColor: '#F4FFFF'
 
             },
             {
                 imageURL: '/assets/app-development.jpeg',
                 isImageRight: false,
-                title: 'App Development',
-                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                title: 'Enterprise Software Development',
+                description: 'We provide enterprise software development services with the adoption of advanced technologies delivering digital solutions for your business that drives efficiency and productivity. Our team takes time to understand your digital needs and build customized digital solutions to integrate with your business process. ',
                 bgColor: ''
 
             },
             {
                 imageURL: '/assets/app-development.jpeg',
                 isImageRight: true,
-                title: 'App Development',
-                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.',
+                title: 'Machine Learning',
+                description: 'We specialize in machine learning app development that enables businesses to achieve significant productivity gains and an edge over their competitors. Machine learning is the process by which computers use statistical techniques to ‘self-learn’ from data, without the need to be specifically programmed to do so. It has the potential to transform every industry, reshaping the world as we know it today.',
+                bgColor: '#F4FFFF'
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                isImageRight: false,
+                title: 'Software as a Service',
+                description: 'We offer a full cycle of SaaS development services. We provide a well-organized and configurable software solution whether you are looking to migrate your on-premise solution to SaaS, build a cloud-based application from scratch, or adjust your current solution to new business objectives. Our team will assist you to come up with SaaS products that influence your business goals positively.',
+                bgColor: ''
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                isImageRight: true,
+                title: 'UI/UX Design',
+                description: 'Our creative team of UX/UI designers understands the need for a good user experience and user interface when interacting with a website, app, custom software, or another type of system. We ensure the development of the most engaging, attractive, and user-friendly application design for your company. You can now re-envision your brand identity with our latest design practices.',
                 bgColor: '#F4FFFF'
             },
         ]

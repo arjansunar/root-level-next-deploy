@@ -2,14 +2,13 @@ import styled from "styled-components"
 import { Title } from "./FAQ"
 import IconCard from "./utility/IconCard"
 
-function IconCards() {
+
+function IconCards({ cardContent }) {
     return (
         <StyledSection>
             <Title>How you Want to Work</Title>
             <CardsWrapper>
-                <IconCard />
-                <IconCard />
-                <IconCard />
+                {cardContent.map((val, i) => <IconCard {...val} key={i} />)}
             </CardsWrapper>
         </StyledSection>
     )
