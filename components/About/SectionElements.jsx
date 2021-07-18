@@ -15,25 +15,32 @@ export const SectionWrapper = styled.div`
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: "col1 col2";
-    grid-column-gap: 20px;
+    grid-gap: 25px;
     font-family: ${sectionStyles.fontFamily};
-    height: fit-content;
+
+    @media (max-width: 900px){
+        display: flex;
+        flex-direction: column;
+    }
+    /* height: 90%; */
 
 `
 
 export const ImageWrapper = styled.div`
     grid-area: ${({ isRight }) => (isRight ? `col2` : `col1`)};
-    max-width: 580px;
+    max-width: 520px;
     overflow: hidden;
     border-radius: 8px;
-    & img{
-        width: auto;
+    & div {
         height: 100%;
+    }
+    & div  img{
+        object-fit: cover;
     }
 `
 export const TextWrapper = styled.div`
-    padding: 3rem 2rem 0 2rem;
-    max-width: 580px;
+    padding: 3rem 2rem 1.5rem 2rem;
+    max-width: 520px;
     border-radius: 8px;
     background-color: ${sectionStyles.textBgColor};
      

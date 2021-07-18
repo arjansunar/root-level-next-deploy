@@ -27,7 +27,7 @@ export const GridElements = styled.div`
 
 `
 export const FooterTitle = styled.h3`
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat' ,sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -37,7 +37,7 @@ export const FooterTitle = styled.h3`
 `
 const sharedSubsectionStyles = css`
     padding-top: 1.5rem;
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat' ,sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -93,20 +93,20 @@ export const FooterBottomWrapper = styled.div`
     padding: 1rem;
 `
 export const FooterPrivacyBlock = styled.div`
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
     /* text-align: center; */
 
 `
 export const FooterBottomCopyRight = styled.p`
-    font-family: 'Montserrat' sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 20px;
     letter-spacing: 0em;
     text-transform: uppercase;
