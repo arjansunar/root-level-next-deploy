@@ -7,11 +7,13 @@ import {
     Title,
     Desc
 } from './SectionElements'
+import Image from 'next/image'
+
 function Section({ imageURL, isImageRight = false, tag, title, description }) {
     return (
         <SectionWrapper>
             <ImageWrapper isRight={isImageRight}>
-                <img src={imageURL} alt="" />
+                <Image src={imageURL} alt={title} height='580px' width='580px' />
             </ImageWrapper>
             <TextWrapper>
                 <Tag>{tag}</Tag>
