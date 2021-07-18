@@ -8,7 +8,7 @@ import { content } from '../content'
 
 const homeContent = { ...content.homePage }
 
-
+const questionAnswer = [...homeContent.faqs]
 export default function Home() {
   return (
     <div>
@@ -24,7 +24,7 @@ export default function Home() {
       <PartnerSection />
       <IconCards />
       <Testimonials />
-      <FAQ />
+      <FAQ questionAnswer={questionAnswer} />
     </div>
   )
 }
