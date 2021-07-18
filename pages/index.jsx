@@ -7,7 +7,8 @@ import Testimonials from '../components/Home/Testimonials'
 import { content } from '../content'
 
 const homeContent = { ...content.homePage }
-
+const questionAnswer = [...homeContent.faqs]
+const iconCardContent = [...homeContent.cardContent]
 
 export default function Home() {
   return (
@@ -22,9 +23,9 @@ export default function Home() {
       // imageProps={{ imageURL: "https://images.unsplash.com/photo-1517339461380-928f5f4def9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" }}
       />
       <PartnerSection />
-      <IconCards />
+      <IconCards cardContent={iconCardContent} />
       <Testimonials />
-      <FAQ />
+      <FAQ questionAnswer={questionAnswer} />
     </div>
   )
 }

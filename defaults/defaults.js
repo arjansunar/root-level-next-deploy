@@ -9,13 +9,13 @@ export const defaultStyles = {
     },
     heroSection: {
         title: {
-            fontSize: '50px',
-            fontWeight: 'bold',
-            lineHeight: '5.5rem'
+            fontSize: '3rem',
+            fontWeight: '600',
+            lineHeight: '4rem'
         },
         subTitle: {
-            fontSize: '1.5rem',
-            fontWeight: '600',
+            fontSize: '1.2rem',
+            fontWeight: '500',
             lineHeight: '2rem'
         },
         description: {
@@ -87,14 +87,14 @@ export const defaultStyles = {
             color: '#008080'
         },
         title: {
-            fontSize: '3rem',
+            fontSize: '2rem',
             fontWeight: '600',
             lineHeight: '3.75rem',
             color: '#00487C'
 
         },
         description: {
-            fontSize: '1.5rem',
+            fontSize: '1rem',
             fontWeight: 500,
             lineHeight: '2rem',
             color: '#212529'
@@ -105,16 +105,16 @@ export const defaultStyles = {
     serviceSection: {
         title: {
             fontFamily: "'Poppins', sans-serif",
-            fontSize: '2.5rem',
+            fontSize: '2rem',
             fontWeight: 500,
-            lineHeight: '3.75rem',
+            lineHeight: '3.5rem',
 
         },
         description: {
             fontFamily: "'Montserrat', sans-serif",
-            fontSize: '1.25rem',
+            fontSize: '1rem',
             fontWeight: 400,
-            lineHeight: '2rem',
+            lineHeight: '1.8rem',
 
         },
         color: '#000'

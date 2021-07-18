@@ -1,15 +1,14 @@
 import styled from "styled-components"
 import Image from "next/image"
 import { defaultStyles } from '../../../defaults/defaults';
-function IconCard() {
+function IconCard({ title, description, imgPath }) {
     return (
         <CardWrapper>
             <IconWrapper>
-                <Image src='/assets/what-we-do-user-centric.svg' alt='' height='48px' width="48px" />
+                <Image src={imgPath} alt='' height='48px' width="48px" />
             </IconWrapper>
-            <Title>Digital product and services design and development</Title>
-            <Desc>We offer full-cycle software products and applications development, ensuring end-to-end solutions that really deliver.
-            </Desc>
+            <Title>{title}</Title>
+            <Desc>{description}</Desc>
         </CardWrapper>
     )
 }
@@ -21,6 +20,7 @@ const CardWrapper = styled.div`
     padding: 1rem;
     display: grid;
     place-content: center;
+    height: fit-content;
 `
 
 const IconWrapper = styled.div`

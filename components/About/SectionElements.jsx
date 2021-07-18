@@ -17,6 +17,8 @@ export const SectionWrapper = styled.div`
     grid-template-areas: "col1 col2";
     grid-column-gap: 20px;
     font-family: ${sectionStyles.fontFamily};
+    height: fit-content;
+
 `
 
 export const ImageWrapper = styled.div`
@@ -30,7 +32,7 @@ export const ImageWrapper = styled.div`
     }
 `
 export const TextWrapper = styled.div`
-    padding: 5rem 2rem 3.125rem 2rem;
+    padding: 3rem 2rem 0 2rem;
     max-width: 580px;
     border-radius: 8px;
     background-color: ${sectionStyles.textBgColor};

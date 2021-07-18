@@ -1,22 +1,9 @@
 import styled from "styled-components";
 import Accordion from "./utility/Accordion";
 
-const questionAnswer = [
-    {
-        question: 'Where is the company located?',
-        answer: 'Nibh mattis luctus feugiat augue. In ut arcu dignissim fermentum pretium quam ultrices placerat. Ullamcorper mauris dolor aenean consectetur id auctor nulla enim quis. Porta amet venenatis sit nisl, '
-    },
-    {
-        question: 'Where is the company located?',
-        answer: 'Nibh mattis luctus feugiat augue. In ut arcu dignissim fermentum pretium quam ultrices placerat. Ullamcorper mauris dolor aenean consectetur id auctor nulla enim quis. Porta amet venenatis sit nisl, '
-    },
-    {
-        question: 'Where is the company located?',
-        answer: 'Nibh mattis luctus feugiat augue. In ut arcu dignissim fermentum pretium quam ultrices placerat. Ullamcorper mauris dolor aenean consectetur id auctor nulla enim quis. Porta amet venenatis sit nisl, '
-    },
-]
 
-function FAQ() {
+
+function FAQ({ questionAnswer }) {
     return (
         <FWrapper>
             <Title>Frequently Asked Questions</Title>

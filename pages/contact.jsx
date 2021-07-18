@@ -50,6 +50,8 @@ const BgDecor = styled.div`
     clip-path: polygon(0 46%, 100% 1%, 100% 100%, 0% 100%);
     margin-bottom: -1px;
 `
+
+const questionAnswer = [...contactContent.faqs]
 function Contact() {
     return (
         <div>
@@ -66,7 +68,7 @@ function Contact() {
                 <BgDecor />
 
             </ContactWrapper>
-            <FAQ />
+            <FAQ questionAnswer={questionAnswer} />
         </div>
     )
 }

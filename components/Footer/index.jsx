@@ -71,7 +71,7 @@ function Footer() {
                     <GridElements>
                         <FooterTitle>About the Company</FooterTitle>
                         <FooterDesc>
-                            Aenean amet sit risus varius. Interdum vivamus sollicitudin ante vitae sed purus. Ut cras ullamcorper feugiat enim pharetra orci elementu m posuere.
+                            Root Level is a technology services company delivering products, solutions, and systems that empower your business.  We empower companies with our industry-standard digital solutions. Our team of dedicated developers, engineers, and designers deliver end-to-end fully equipped software solutions for your business.
                         </FooterDesc>
                     </GridElements>
                 </GridComponent>
