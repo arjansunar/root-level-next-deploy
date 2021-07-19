@@ -4,7 +4,8 @@ import SectionInfo from '../components/What-we-do/SectionInfo'
 import ImageInfoSection from '../components/What-we-do/ImageInfoSection'
 import styled from 'styled-components'
 import InfoCard from '../components/What-we-do/InfoCard'
-import Image from 'next/image'
+// import Image from 'next/image'
+import Carousel from '../components/What-we-do/Carousel'
 const whatWeDoContent = { ...content.whatWeDoPage }
 
 function WhatWeDo() {
@@ -17,12 +18,18 @@ function WhatWeDo() {
                 title='How we work'
                 desc='We work on a wide variety of software projects, we know each project will be different so we approach each project with an open mind and manage each piece of bespoke software in a way that suits the individual project.'
             />
-            <ImageWrapper>
+            {/* <ImageWrapper>
                 <Image src='/assets/how-we-work.png' width='1180' height='212' alt='how we work' />
-            </ImageWrapper>
-            <ImageInfoSection
-                {...whatWeDoContent.imageInfoSection}
-            />
+            </ImageWrapper> */}
+            <Carousel>
+                {whatWeDoContent.imageInfoSection.map((val, i) =>
+                    <ImageInfoSection
+                        {...val}
+                        key={i}
+                    />
+                )}
+            </Carousel>
+
 
             <SectionIconWrapper>
                 <SectionInfo
@@ -58,11 +65,11 @@ function WhatWeDo() {
 
 export default WhatWeDo
 
-const ImageWrapper = styled.div`
-    display: grid;
-    place-content: center;
-    margin-bottom: 3.7rem;
-`
+// const ImageWrapper = styled.div`
+//     display: grid;
+//     place-content: center;
+//     margin-bottom: 3.7rem;
+// `
 const SectionIconWrapper = styled.div`
     background: #35B5AC1F;
     padding: .5rem 5rem;

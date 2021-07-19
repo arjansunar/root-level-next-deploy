@@ -79,12 +79,40 @@ export const content = {
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
         },
-        imageInfoSection: {
-            imageURL: '/assets/app-development.jpeg',
-            title: 'Requirement Gathering',
-            desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
+        imageInfoSection: [
+            {
+                imageURL: '/assets/app-development.jpeg',
+                title: 'Requirement Gathering',
+                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
                 arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
-        }
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                title: 'Design & Prototyping',
+                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
+                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                title: 'Development',
+                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
+                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                title: 'Testing',
+                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
+                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+            },
+            {
+                imageURL: '/assets/app-development.jpeg',
+                title: 'Launch',
+                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
+                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+            },
+
+        ]
+
     },
     servicesPage: {
         heroSection: {
