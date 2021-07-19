@@ -2,6 +2,7 @@ import { Carousel } from 'react-responsive-carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import styled, { css } from 'styled-components';
 import Image from 'next/image'
+import { useState } from 'react';
 
 function HomeCarousel({ children }) {
     return (
@@ -30,7 +31,9 @@ function HomeCarousel({ children }) {
 
 export default HomeCarousel
 
-const StyledCarousel = styled(Carousel)`
+
+
+export const StyledCarousel = styled(Carousel)`
     position: relative;
 `
 

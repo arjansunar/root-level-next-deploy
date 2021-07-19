@@ -22,8 +22,7 @@ const Wrapper = styled.div`
     color: ${({ color }) => (color ? color : '#fff')};
     border-radius: 50%;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    
     @media screen and (max-width: 860px){
         margin:0 auto;
     }
