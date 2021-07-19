@@ -1,11 +1,9 @@
 import Hero from "../components/HeroSection"
 import { content } from '../content'
-import Section from "../components/Services/Section"
-import { Divider } from "../components/Services/SectionElements"
+import CardWrapper from "../components/Services"
 
 const servicesContent = { ...content.servicesPage }
-const sectionData = [...servicesContent.sections]
-
+const cardContent = [...servicesContent.cards]
 function Services() {
     return (
         <div>
@@ -13,10 +11,8 @@ function Services() {
                 {...servicesContent.heroSection}
             />
 
-            <Divider />
-            {sectionData.map((section, i) =>
-                <Section key={i} {...section} />
-            )}
+            <CardWrapper cardContent={cardContent} />
+
         </div>
     )
 }

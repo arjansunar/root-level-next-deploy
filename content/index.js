@@ -94,51 +94,84 @@ export const content = {
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
         },
-        sections: [
+        // sections: [
+        //     {
+        //         imageURL: '/assets/app-development.jpeg',
+        //         isImageRight: false,
+        //         title: 'Mobile App Development',
+        //         description: 'We offer native, hybrid, and cross-platform mobile application development services by building user-engaging experience mobile platforms that connect the brand with the users. Our analysts work with you to understand your business and help you transform your business ideas into the most user-friendly and interactive custom software solutions. ',
+        //         bgColor: ''
+        //     },
+        //     {
+        //         imageURL: '/assets/app-development.jpeg',
+        //         isImageRight: true,
+        //         title: 'Web Development',
+        //         description: 'Our Web development services allow your company to automate processes and create web platforms for effective branding. Our design and development team offers your business a variety of services including web development, custom web apps development, UI/UX design, and SEO-friendly web design.  ',
+        //         bgColor: '#F4FFFF'
+
+        //     },
+        //     {
+        //         imageURL: '/assets/app-development.jpeg',
+        //         isImageRight: false,
+        //         title: 'Enterprise Software Development',
+        //         description: 'We provide enterprise software development services with the adoption of advanced technologies delivering digital solutions for your business that drives efficiency and productivity. Our team takes time to understand your digital needs and build customized digital solutions to integrate with your business process. ',
+        //         bgColor: ''
+
+        //     },
+        //     {
+        //         imageURL: '/assets/app-development.jpeg',
+        //         isImageRight: true,
+        //         title: 'Machine Learning',
+        //         description: 'We specialize in machine learning app development that enables businesses to achieve significant productivity gains and an edge over their competitors. Machine learning is the process by which computers use statistical techniques to ‘self-learn’ from data, without the need to be specifically programmed to do so. It has the potential to transform every industry, reshaping the world as we know it today.',
+        //         bgColor: '#F4FFFF'
+        //     },
+        //     {
+        //         imageURL: '/assets/app-development.jpeg',
+        //         isImageRight: false,
+        //         title: 'Software as a Service',
+        //         description: 'We offer a full cycle of SaaS development services. We provide a well-organized and configurable software solution whether you are looking to migrate your on-premise solution to SaaS, build a cloud-based application from scratch, or adjust your current solution to new business objectives. Our team will assist you to come up with SaaS products that influence your business goals positively.',
+        //         bgColor: ''
+        //     },
+        //     {
+        //         imageURL: '/assets/app-development.jpeg',
+        //         isImageRight: true,
+        //         title: 'UI/UX Design',
+        //         description: 'Our creative team of UX/UI designers understands the need for a good user experience and user interface when interacting with a website, app, custom software, or another type of system. We ensure the development of the most engaging, attractive, and user-friendly application design for your company. You can now re-envision your brand identity with our latest design practices.',
+        //         bgColor: '#F4FFFF'
+        //     },
+        // ],
+        cards: [
             {
-                imageURL: '/assets/app-development.jpeg',
-                isImageRight: false,
                 title: 'Mobile App Development',
-                description: 'We offer native, hybrid, and cross-platform mobile application development services by building user-engaging experience mobile platforms that connect the brand with the users. Our analysts work with you to understand your business and help you transform your business ideas into the most user-friendly and interactive custom software solutions. ',
-                bgColor: ''
+                description: 'We offer native, hybrid, and cross-platform mobile application development services by building user-engaging experience mobile platforms that connect the brand with the users. Our analysts work with you to understand your business and help you transform your business ideas into the most user-friendly and interactive custom software solutions.',
+                imagePath: '/assets/services/mobile-dev.svg',
             },
             {
-                imageURL: '/assets/app-development.jpeg',
-                isImageRight: true,
                 title: 'Web Development',
-                description: 'Our Web development services allow your company to automate processes and create web platforms for effective branding. Our design and development team offers your business a variety of services including web development, custom web apps development, UI/UX design, and SEO-friendly web design.  ',
-                bgColor: '#F4FFFF'
-
+                description: 'Our Web development services allow your company to automate processes and create web platforms for effective branding. Our design and development team offers your business a variety of services including web development, custom web apps development, UI/UX design, and SEO-friendly web design. ',
+                imagePath: '/assets/services/mobile-dev.svg',
             },
             {
-                imageURL: '/assets/app-development.jpeg',
-                isImageRight: false,
                 title: 'Enterprise Software Development',
-                description: 'We provide enterprise software development services with the adoption of advanced technologies delivering digital solutions for your business that drives efficiency and productivity. Our team takes time to understand your digital needs and build customized digital solutions to integrate with your business process. ',
-                bgColor: ''
-
+                description: 'We provide enterprise software development services with the adoption of advanced technologies delivering digital solutions for your business that drives efficiency and productivity. Our team takes time to understand your digital needs and build customized digital solutions to integrate with your business process.',
+                imagePath: '/assets/services/mobile-dev.svg',
             },
             {
-                imageURL: '/assets/app-development.jpeg',
-                isImageRight: true,
                 title: 'Machine Learning',
                 description: 'We specialize in machine learning app development that enables businesses to achieve significant productivity gains and an edge over their competitors. Machine learning is the process by which computers use statistical techniques to ‘self-learn’ from data, without the need to be specifically programmed to do so. It has the potential to transform every industry, reshaping the world as we know it today.',
-                bgColor: '#F4FFFF'
+                imagePath: '/assets/services/mobile-dev.svg',
             },
             {
-                imageURL: '/assets/app-development.jpeg',
-                isImageRight: false,
                 title: 'Software as a Service',
                 description: 'We offer a full cycle of SaaS development services. We provide a well-organized and configurable software solution whether you are looking to migrate your on-premise solution to SaaS, build a cloud-based application from scratch, or adjust your current solution to new business objectives. Our team will assist you to come up with SaaS products that influence your business goals positively.',
-                bgColor: ''
+                imagePath: '/assets/services/mobile-dev.svg',
             },
             {
-                imageURL: '/assets/app-development.jpeg',
-                isImageRight: true,
                 title: 'UI/UX Design',
-                description: 'Our creative team of UX/UI designers understands the need for a good user experience and user interface when interacting with a website, app, custom software, or another type of system. We ensure the development of the most engaging, attractive, and user-friendly application design for your company. You can now re-envision your brand identity with our latest design practices.',
-                bgColor: '#F4FFFF'
+                description: 'Our creative team of UX/UI designers understands the need for a good user experience and user interface when interacting with a website, app, custom software, or another type of system. We ensure the development of the most engaging, attractive, and user-friendly application design for your company. You can now re-envision your brand identity with our latest design practices',
+                imagePath: '/assets/services/mobile-dev.svg',
             },
+
         ]
     },
     contactPage: {
