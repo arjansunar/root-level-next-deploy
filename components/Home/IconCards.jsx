@@ -6,7 +6,7 @@ import IconCard from "./utility/IconCard"
 function IconCards({ cardContent }) {
     return (
         <StyledSection>
-            <Title>How you Want to Work</Title>
+            <Title>Our Work Ethic</Title>
             <CardsWrapper>
                 {cardContent.map((val, i) => <IconCard {...val} key={i} />)}
             </CardsWrapper>

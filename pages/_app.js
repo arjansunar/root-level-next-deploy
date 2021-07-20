@@ -7,6 +7,7 @@ import { PropagateLoader as Loader } from 'react-spinners'
 import NavBar from '../components/Navbar/'
 import SideBar from '../components/Sidebar'
 import Footer from "../components/Footer";
+import { ModalProvider, BaseModalBackground } from 'styled-react-modal'
 
 import "../styles/globals.css"
 const GlobalStyle = createGlobalStyle`
@@ -22,8 +23,13 @@ const StyledLoader = styled(Loader)`
   margin-top: 50rem;
 `
 
-
-
+const ModalBackground = styled(BaseModalBackground)`
+  display: grid;
+  overflow-x: hidden;
+  background: rgba(0,0,0,0.9);
+  opacity: ${(props) => props.opacity};
+  transition: all 0.3s ease-in-out;
+`
 
 function MyApp({ Component, pageProps }) {
 
@@ -62,12 +68,12 @@ function MyApp({ Component, pageProps }) {
           </div>
           :
 
-          <>
+          <ModalProvider backgroundComponent={ModalBackground}>
             <NavBar toggle={toggle} />
             <SideBar isOpen={isOpen} toggle={toggle} />
             <Component {...pageProps} />
             <Footer />
-          </>
+          </ModalProvider>
       }
     </>
   );

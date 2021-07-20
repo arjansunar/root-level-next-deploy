@@ -11,64 +11,63 @@ const cardContent = [
         jobTitle: 'React Developer',
         experience: '1-2 years',
         postDate: 'July 15, 2021',
-        vacancy: '2'
+        vacancy: '2',
+        modalContent: {
+            roleOverview: 'We are looking for a Front-End Web Developer who is motivated to combine the art of design with the art of programming. You will work with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.',
+            responsibilities: [
+                'Develop new user-facing features',
+                'Build reusable code and libraries for future useIndependently craft project solutions by applying solid Object-Oriented-Design principles.',
+                'Ensure the technical feasibility of UI/UX designs',
+                'Optimize application for maximum speed and scalability',
+                'Assure that all user input is validated before submitting to back-end',
+                'Collaborate with other team members and stakeholders',
+                'Optimize application for maximum speed and scalability',
+                'Assure that all user input is validated before submitting to back-end',
+                'Collaborate with other team members and stakeholders'
+            ]
+        }
     },
     {
         imagePath: '/assets/career/career-react.png',
-        jobTitle: 'React Developer',
+        jobTitle: 'Django Developer',
         experience: '1-2 years',
         postDate: 'July 15, 2021',
-        vacancy: '2'
-    },
-    {
-        imagePath: '/assets/career/career-react.png',
-        jobTitle: 'React Developer',
-        experience: '1-2 years',
-        postDate: 'July 15, 2021',
-        vacancy: '2'
-    },
-    {
-        imagePath: '/assets/career/career-react.png',
-        jobTitle: 'React Developer',
-        experience: '1-2 years',
-        postDate: 'July 15, 2021',
-        vacancy: '2'
-    },
-    {
-        imagePath: '/assets/career/career-react.png',
-        jobTitle: 'React Developer',
-        experience: '1-2 years',
-        postDate: 'July 15, 2021',
-        vacancy: '2'
-    },
-    {
-        imagePath: '/assets/career/career-react.png',
-        jobTitle: 'React Developer',
-        experience: '1-2 years',
-        postDate: 'July 15, 2021',
-        vacancy: '2'
-    },
-
+        vacancy: '2',
+        modalContent: {
+            roleOverview: 'We are looking for a Front-End Web Developer who is motivated to combine the art of design with the art of programming. You will work with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.',
+            responsibilities: [
+                'Develop new user-facing features',
+                'Build reusable code and libraries for future useIndependently craft project solutions by applying solid Object-Oriented-Design principles.',
+                'Ensure the technical feasibility of UI/UX designs',
+                'Optimize application for maximum speed and scalability',
+                'Assure that all user input is validated before submitting to back-end',
+                'Collaborate with other team members and stakeholders',
+                'Optimize application for maximum speed and scalability',
+                'Assure that all user input is validated before submitting to back-end',
+                'Collaborate with other team members and stakeholders'
+            ]
+        }
+    }
 ]
 
-const initialButtonsState = [
-    {
-        title: 'all hiring',
-        active: true
-    },
-    {
-        title: 'design',
-        active: false
-    },
-    {
-        title: 'development ',
-        active: false
-    },
-    {
-        title: 'administrative',
-        active: false
-    },
-]
+// const initialButtonsState = [
+//     {
+//         title: 'all hiring',
+//         active: true
+//     },
+//     {
+//         title: 'design',
+//         active: false
+//     },
+//     {
+//         title: 'development ',
+//         active: false
+//     },
+//     {
+//         title: 'administrative',
+//         active: false
+//     },
+// ]
 
 function CurrentOpeningsSection() {
 
@@ -77,11 +76,11 @@ function CurrentOpeningsSection() {
             <TitleWrapper>
                 <Title>Current Openings</Title>
             </TitleWrapper>
-            <ButtonWrapper>
+            {/* <ButtonWrapper>
                 {initialButtonsState.map((button, i) => (
                     <Button active={button.active} title={button.title} key={i} />
                 ))}
-            </ButtonWrapper>
+            </ButtonWrapper> */}
             <GridContainer>
                 {cardContent.map((card, i) => (
                     <CareerCard  {...card} key={i} />
