@@ -1,25 +1,66 @@
 import Image from 'next/image'
 import styled, { css } from 'styled-components'
+// import Modal from 'react-modal'
+import { useState } from 'react'
+import Jd from './Modal'
+import Modal from 'styled-react-modal'
 
 function CareerCard({
     imagePath,
     jobTitle,
     experience,
-    postDate,
-    vacancy }) {
+    postDate, modalContent }) {
+
+    const [isModalOpen, setModalOpen] = useState(false)
+
+    function handleOpenModal() {
+        setModalOpen(true)
+    }
+    function handleCloseModal() {
+        setModalOpen(false)
+    }
+    const [opacity, setOpacity] = useState(0);
+
+    function afterOpen() {
+        setTimeout(() => {
+            setOpacity(1);
+        }, 100);
+    }
+
+    function beforeClose() {
+        return new Promise((resolve) => {
+            setOpacity(0);
+            setTimeout(resolve, 300);
+        });
+    }
     return (
-        <Wrapper>
-            <TextWrapper>
-                <Image src={imagePath} alt={jobTitle} height='60px' width='60px' />
-                <JobTitle>{jobTitle}</JobTitle>
-                <Experience>{experience}</Experience>
-                <PostDate>{postDate}</PostDate>
-            </TextWrapper>
-            <ButtonWrapper>
-                <JDLink href="#">job details</JDLink>
-                <CareerButton active lg poppins>apply</CareerButton>
-            </ButtonWrapper>
-        </Wrapper>
+        <>
+            <Wrapper>
+                <TextWrapper>
+                    <Image src={imagePath} alt={jobTitle} height='60px' width='60px' />
+                    <JobTitle>{jobTitle}</JobTitle>
+                    <Experience>{experience}</Experience>
+                    <PostDate>{postDate}</PostDate>
+                </TextWrapper>
+                <ButtonWrapper>
+                    <JDLink onClick={handleOpenModal}>job details</JDLink>
+                    <CareerButton active lg poppins onClick={handleOpenModal}>apply</CareerButton>
+                </ButtonWrapper>
+            </Wrapper>
+            <StyledModal
+                isOpen={isModalOpen}
+                onBackgroundClick={handleCloseModal}
+                onEscapeKeydown={handleCloseModal}
+                opacity={opacity}
+                backgroundProps={{ opacity }}
+                afterOpen={afterOpen}
+                beforeClose={beforeClose}
+            >
+                <Jd content={modalContent} jobTitle={jobTitle} experience={experience} postDate={postDate} />
+
+            </StyledModal>
+
+        </>
     )
 }
 
@@ -98,4 +139,10 @@ export const CareerButton = styled.button`
     font-family: ${({ poppins }) => (poppins ? `'Poppins', sans-serif` : `'Montserrat', sans-serif`)};
     font-weight: ${({ poppins }) => (poppins ? `600` : `500`)};
     font-size: 14px;
+`
+
+const StyledModal = styled(Modal)`
+  padding: 2rem;
+  opacity: ${(props) => props.opacity};
+  transition : all 0.3s ease-in-out;
 `
