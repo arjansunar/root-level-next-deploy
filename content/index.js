@@ -26,24 +26,6 @@ export const content = {
             authorPosition: 'CEO, Saleways',
         },
         ],
-        faqs: [
-            {
-                question: 'How long does it take to build a website?',
-                answer: 'Our standard websites take approximately 9-120 days to create. Our E-commerce (online store) websites take approximately 160 days to create. This time will vary from project to project.'
-            },
-            {
-                question: 'Who will I work with during the project?',
-                answer: 'This is a great question to ask and you should ask it of any web design and development firm you are considering. Our clients work directly with our experienced team. The team will depend on your project needs and what stage of the process you are in during the project. The team members will remain involved from start to finish.'
-            },
-            {
-                question: 'What platform do you build your websites on?',
-                answer: 'We build our project on the Django web framework of Python. Our front-end technologies are HTML, CSS and JavaScript(React JS). We also build websites on the Open-source Content Management System Platform.'
-            },
-            {
-                question: `What's with the name The Root Level?`,
-                answer: `Well that's an interesting question you have. We opt-to treat every customer with the "super" tagline. As the name suggests, Root- the super user thus the name "The Root Level"`
-            },
-        ],
         cardContent: [
             {
                 title: 'Agile Software Development',
@@ -122,52 +104,7 @@ export const content = {
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
         },
-        // sections: [
-        //     {
-        //         imageURL: '/assets/app-development.jpeg',
-        //         isImageRight: false,
-        //         title: 'Mobile App Development',
-        //         description: 'We offer native, hybrid, and cross-platform mobile application development services by building user-engaging experience mobile platforms that connect the brand with the users. Our analysts work with you to understand your business and help you transform your business ideas into the most user-friendly and interactive custom software solutions. ',
-        //         bgColor: ''
-        //     },
-        //     {
-        //         imageURL: '/assets/app-development.jpeg',
-        //         isImageRight: true,
-        //         title: 'Web Development',
-        //         description: 'Our Web development services allow your company to automate processes and create web platforms for effective branding. Our design and development team offers your business a variety of services including web development, custom web apps development, UI/UX design, and SEO-friendly web design.  ',
-        //         bgColor: '#F4FFFF'
 
-        //     },
-        //     {
-        //         imageURL: '/assets/app-development.jpeg',
-        //         isImageRight: false,
-        //         title: 'Enterprise Software Development',
-        //         description: 'We provide enterprise software development services with the adoption of advanced technologies delivering digital solutions for your business that drives efficiency and productivity. Our team takes time to understand your digital needs and build customized digital solutions to integrate with your business process. ',
-        //         bgColor: ''
-
-        //     },
-        //     {
-        //         imageURL: '/assets/app-development.jpeg',
-        //         isImageRight: true,
-        //         title: 'Machine Learning',
-        //         description: 'We specialize in machine learning app development that enables businesses to achieve significant productivity gains and an edge over their competitors. Machine learning is the process by which computers use statistical techniques to ‘self-learn’ from data, without the need to be specifically programmed to do so. It has the potential to transform every industry, reshaping the world as we know it today.',
-        //         bgColor: '#F4FFFF'
-        //     },
-        //     {
-        //         imageURL: '/assets/app-development.jpeg',
-        //         isImageRight: false,
-        //         title: 'Software as a Service',
-        //         description: 'We offer a full cycle of SaaS development services. We provide a well-organized and configurable software solution whether you are looking to migrate your on-premise solution to SaaS, build a cloud-based application from scratch, or adjust your current solution to new business objectives. Our team will assist you to come up with SaaS products that influence your business goals positively.',
-        //         bgColor: ''
-        //     },
-        //     {
-        //         imageURL: '/assets/app-development.jpeg',
-        //         isImageRight: true,
-        //         title: 'UI/UX Design',
-        //         description: 'Our creative team of UX/UI designers understands the need for a good user experience and user interface when interacting with a website, app, custom software, or another type of system. We ensure the development of the most engaging, attractive, and user-friendly application design for your company. You can now re-envision your brand identity with our latest design practices.',
-        //         bgColor: '#F4FFFF'
-        //     },
-        // ],
         cards: [
             {
                 title: 'Mobile App Development',
@@ -206,6 +143,22 @@ export const content = {
         title: 'Let’s build together',
         subtitle: 'Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.',
         faqs: [
+            {
+                question: 'How long does it take to build a website?',
+                answer: 'Our standard websites take approximately 9-120 days to create. Our E-commerce (online store) websites take approximately 160 days to create. This time will vary from project to project.'
+            },
+            {
+                question: 'Who will I work with during the project?',
+                answer: 'This is a great question to ask and you should ask it of any web design and development firm you are considering. Our clients work directly with our experienced team. The team will depend on your project needs and what stage of the process you are in during the project. The team members will remain involved from start to finish.'
+            },
+            {
+                question: 'What platform do you build your websites on?',
+                answer: 'We build our project on the Django web framework of Python. Our front-end technologies are HTML, CSS and JavaScript(React JS). We also build websites on the Open-source Content Management System Platform.'
+            },
+            {
+                question: `What's with the name The Root Level?`,
+                answer: `Well that's an interesting question you have. We opt-to treat every customer with the "super" tagline. As the name suggests, Root- the super user thus the name "The Root Level"`
+            },
             {
                 question: 'What can you help me with?',
                 answer: ''

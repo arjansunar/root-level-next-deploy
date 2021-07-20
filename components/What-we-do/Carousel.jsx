@@ -36,40 +36,37 @@ export default function WhatWeDoCarousel({ children }) {
     }
     return (
         <>
-            <Icons>
-                {icons.map((val, i) => (
-                    (i == currentSlide) ?
+            <IconContainer>
+                <Icons>
+                    {icons.map((val, i) => (
+                        (i == currentSlide) ?
 
-                        <IconButton key={i} onClick={() => handleSlideChange(i)}>
-                            <IconWrapper
-                                size='120px'
-                                iconPath={val.iconPath}
-                                bgColor='#35B5AC'
-                            />
-                            <Title active={true} >{val.title}</Title>
-                        </IconButton> :
-                        <IconButton key={i} onClick={() => handleSlideChange(i)}>
-                            <IconWrapper
-                                size='120px'
-                                iconPath={val.iconPath}
-                            />
-                            <Title active={false}>{val.title}</Title>
+                            <IconButton key={i} onClick={() => handleSlideChange(i)}>
+                                <IconWrapper
+                                    size='100px'
+                                    iconPath={val.iconPath}
+                                    bgColor='#35B5AC'
+                                />
+                                <Title active={true} >{val.title}</Title>
+                            </IconButton> :
+                            <IconButton key={i} onClick={() => handleSlideChange(i)}>
+                                <IconWrapper
+                                    size='100px'
+                                    iconPath={val.iconPath}
+                                />
+                                <Title active={false}>{val.title}</Title>
 
-                        </IconButton>
-
-
+                            </IconButton>
 
 
-                ))}
 
-            </Icons>
 
-            {/* <Icons>
-                <IconWrapper
-                    isButton={true}
-                    size='120px'
-                    iconPath='/assets/what-we-do-user-centric.svg' />
-            </Icons> */}
+                    ))}
+
+                </Icons>
+            </IconContainer>
+
+
             <StyledCarousel
                 showArrows={false}
                 showIndicators={false}
@@ -84,9 +81,22 @@ export default function WhatWeDoCarousel({ children }) {
 }
 
 const Icons = styled.div`
-    margin-top: 5rem;
-    margin-bottom: 3.625rem;
+    /* margin-top: 5rem;
+    margin-bottom: 3.625rem; */
     display: flex;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0rem 2rem 3.625rem 2rem;
+    box-shadow: 0px 3px 8px 0px #0000001A;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+
+`
+const IconContainer = styled.div`
+    display: grid;
+    place-content: center;
 `
 const IconButton = styled.div`
     cursor: pointer;

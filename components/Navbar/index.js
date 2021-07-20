@@ -27,11 +27,7 @@ function NavBar({ toggle }) {
                         <FaBars />
                     </MobileIcon>
                     <NavMenu>
-                        <NavItem >
-                            <Link href="/what-we-do">
-                                <NavLinks>What we do</NavLinks>
-                            </Link>
-                        </NavItem>
+
                         <NavItem >
                             <Link href="/services">
                                 <NavLinks>Services</NavLinks>
@@ -45,6 +41,11 @@ function NavBar({ toggle }) {
                         <NavItem >
                             <Link href="/about-us">
                                 <NavLinks>About Us</NavLinks>
+                            </Link>
+                        </NavItem>
+                        <NavItem >
+                            <Link href="/contact">
+                                <NavLinks>Contact Us</NavLinks>
                             </Link>
                         </NavItem>
                         <NavItem >
