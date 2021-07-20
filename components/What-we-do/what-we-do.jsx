@@ -1,11 +1,11 @@
-import Hero from '../components/HeroSection'
-import { content } from '../content'
-import SectionInfo from '../components/What-we-do/SectionInfo'
-import ImageInfoSection from '../components/What-we-do/ImageInfoSection'
+import Hero from '../HeroSection'
+import { content } from '../../content'
+import SectionInfo from './SectionInfo'
+import ImageInfoSection from './ImageInfoSection'
 import styled from 'styled-components'
-import InfoCard from '../components/What-we-do/InfoCard'
+import InfoCard from './InfoCard'
 // import Image from 'next/image'
-import Carousel from '../components/What-we-do/Carousel'
+import Carousel from './Carousel'
 const whatWeDoContent = { ...content.whatWeDoPage }
 
 function WhatWeDo() {
@@ -14,10 +14,7 @@ function WhatWeDo() {
             <Hero
                 {...whatWeDoContent.heroSection}
             />
-            <SectionInfo
-                title='How we work'
-                desc='We work on a wide variety of software projects, we know each project will be different so we approach each project with an open mind and manage each piece of bespoke software in a way that suits the individual project.'
-            />
+
             {/* <ImageWrapper>
                 <Image src='/assets/how-we-work.png' width='1180' height='212' alt='how we work' />
             </ImageWrapper> */}
