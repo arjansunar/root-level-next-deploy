@@ -96,8 +96,8 @@ export const content = {
     servicesPage: {
         heroSection: {
             title: 'Services',
-            subtitle: 'The Root Level helps businesses gain a competitive edge with solutions on Mobile application, web development, and other software development services.',
-            description: 'The only expression that "Root" should follow is "Super! And that’s exactly the feeling we work towards extending towards our clients.',
+            subtitle: 'The only expression that "Root" should follow is "Super! And that’s exactly the feeling we work towards extending towards our clients.',
+            description: 'The Root Level helps businesses gain a competitive edge with solutions on Mobile application, web development, and other software development services.',
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
         },
@@ -231,8 +231,8 @@ export const content = {
     careerPage: {
         heroSection: {
             title: 'Career',
-            subtitle: 'The quality of our work has always been the symbolic character of our company. Committed to customer satisfaction, we take pride in craftsmanship and believe in making the difference.',
-            description: 'March, not work with us as we build the future of software. Here, you get to infuse your ingenuity into your work all the while passionately serving your clients.',
+            subtitle: 'March, not work with us as we build the future of software. Here, you get to infuse your ingenuity into your work all the while passionately serving your clients.',
+            description: 'The quality of our work has always been the symbolic character of our company. Committed to customer satisfaction, we take pride in craftsmanship and believe in making the difference.',
             bg: '#008080',
             heroPic: "/assets/aboutus-hero-pic.svg"
         },
