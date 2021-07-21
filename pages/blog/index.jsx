@@ -3,6 +3,7 @@ import { content } from '../../content'
 import BlogCard from "../../components/Blog/BlogCard"
 import { GridContainer, FlexContainer, DefaultMarginedContainer } from "../../components/utilityStyles"
 import { sanityClient } from "../../lib/sanity";
+import { Spacer } from "../../components/What-we-do/Carousel";
 
 const blogContent = { ...content.blogPage }
 
@@ -21,6 +22,7 @@ function index({ posts: blogs }) {
                     </GridContainer>
                 </FlexContainer>
             </DefaultMarginedContainer>
+            <Spacer height='3rem' />
         </>
     )
 }

@@ -29,7 +29,7 @@ const getDateFormat = (date) => {
 
 }
 
-function BlogCard({ mainImage, title, publishedAt, noOfComments = 20, likes, category, excerpt, slug }) {
+function BlogCard({ mainImage, title, publishedAt, noOfComments, likes, category, excerpt, slug }) {
     const [hover, setHover] = useState(false)
     const [buttonHover, setButtonHover] = useState(false)
     const router = useRouter()
@@ -44,7 +44,6 @@ function BlogCard({ mainImage, title, publishedAt, noOfComments = 20, likes, cat
                 isHovered={hover}
             >
 
-                {/* <img src={urlFor(mainImage).url()} alt={title} /> */}
                 <Image src={urlFor(mainImage).url()} height='280' width='380' alt={title} />
             </ImageWrapper>
             <TextWrapper isHovered={hover}>
@@ -52,18 +51,20 @@ function BlogCard({ mainImage, title, publishedAt, noOfComments = 20, likes, cat
                     <Date>
                         {date}
                     </Date>
-                    <Likes>
+                    {/* <Likes>
                         <span>
                             <img src="/assets/blog-card/card-like.svg" alt="" />
                         </span>
                         {likes}
-                    </Likes>
-                    <Comments>
-                        <span>
-                            <img src="/assets/blog-card/card-comment.svg" alt="" />
-                        </span>
-                        {noOfComments}
-                    </Comments>
+                    </Likes> */}
+                    {noOfComments &&
+                        <Comments>
+                            <span>
+                                <img src="/assets/blog-card/card-comment.svg" alt="" />
+                            </span>
+                            {noOfComments}
+                        </Comments>
+                    }
                 </SubInfoWrapper>
                 <Title >
                     {title}
