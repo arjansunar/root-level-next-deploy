@@ -4,6 +4,7 @@ import { MainImage, PostContent, PostHeadSection, PostInfo, PostWrapper, Title, 
 import { PortableText, sanityClient, urlFor } from "../../lib/sanity";
 
 import { AiOutlineHeart as OutlinedHeart, AiFillHeart as FilledHeart } from "react-icons/ai"
+import Head from "next/head";
 
 function Post({ data }) {
     const [likes, setLikes] = useState(data?.post?.likes);
@@ -34,6 +35,9 @@ function Post({ data }) {
 
             </ShareButtonWrapper> */}
 
+            <Head>
+                <title>{data.post.title}</title>
+            </Head>
             <PostWrapper>
 
                 <PostHeadSection>

@@ -4,6 +4,7 @@ import CardWrapper from "../components/Services"
 import Carousel from '../components/What-we-do/Carousel'
 import ImageInfoSection from '../components/What-we-do/ImageInfoSection'
 import SectionInfo from "../components/What-we-do/SectionInfo"
+import Head from "next/head"
 
 
 const servicesContent = { ...content.servicesPage }
@@ -13,6 +14,10 @@ const whatWeDoContent = { ...content.whatWeDoPage }
 function Services() {
     return (
         <section>
+
+            <Head>
+                <title>Rootlevel | Services</title>
+            </Head>
             <Hero
                 {...servicesContent.heroSection}
             />

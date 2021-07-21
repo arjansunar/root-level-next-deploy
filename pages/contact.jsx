@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { defaultStyles } from '../defaults/defaults'
 import ContactForm from '../components/Form'
 import FAQ from '../components/Home/FAQ'
+import Head from 'next/head'
 
 const contactContent = { ...content.contactPage }
 
@@ -55,6 +56,10 @@ const questionAnswer = [...contactContent.faqs]
 function Contact() {
     return (
         <div>
+
+            <Head>
+                <title>Rootlevel | Contact Us</title>
+            </Head>
             <ContactWrapper>
                 <TextWrapper>
                     <ContactTitle>

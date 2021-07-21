@@ -47,6 +47,8 @@ export default function WhatWeDoCarousel({ children }) {
                                     iconPath={val.iconPath}
                                     bgColor='#35B5AC'
                                 />
+                                <Spacer />
+
                                 <Title active={true} >{val.title}</Title>
                             </IconButton> :
                             <IconButton key={i} onClick={() => handleSlideChange(i)}>
@@ -54,6 +56,7 @@ export default function WhatWeDoCarousel({ children }) {
                                     size='100px'
                                     iconPath={val.iconPath}
                                 />
+                                <Spacer />
                                 <Title active={false}>{val.title}</Title>
 
                             </IconButton>
@@ -65,7 +68,7 @@ export default function WhatWeDoCarousel({ children }) {
 
                 </Icons>
             </IconContainer>
-
+            <Spacer height='2rem' />
 
             <StyledCarousel
                 showArrows={false}
@@ -80,17 +83,21 @@ export default function WhatWeDoCarousel({ children }) {
     )
 }
 
+export const Spacer = styled.div`
+    height: ${({ height }) => (height ? height : '1rem')}
+`
+
 const Icons = styled.div`
     /* margin-top: 5rem;
     margin-bottom: 3.625rem; */
     display: flex;
     grid-gap: 2rem;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1180px;
     margin: 0rem 2rem 3.625rem 2rem;
     box-shadow: 0px 3px 8px 0px #0000001A;
-    padding: 2rem 4rem;
+    padding: 3rem 4rem;
     border-radius: 1rem;
 
 `
@@ -101,6 +108,8 @@ const IconContainer = styled.div`
 const IconButton = styled.div`
     cursor: pointer;
     max-width: 120px;
+    display: grid;
+    place-content: center;
 `
 const Title = styled.h4`
     font-family: 'Montserrat', sans-serif;

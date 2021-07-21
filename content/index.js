@@ -46,9 +46,9 @@ export const content = {
     },
     blogPage: {
         heroSection: {
-            title: 'Blog',
-            subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
-            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
+            title: 'Get an Insight',
+            subtitle: 'At Root Level, we value innovation. Learn great innovation stories from different bloggers and get an insight into the world of computing and information technology. ',
+            description: 'Business today knows no horizon, all by the grace of technology, part of the reason why we are overtly ready to empower your business with all kinds of sophisticated tech solutions required to overcome any challenges that your business is presented with.',
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
         }
@@ -64,33 +64,30 @@ export const content = {
         imageInfoSection: [
             {
                 imageURL: '/assets/app-development.jpeg',
-                title: 'Requirement Gathering',
-                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
-                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+                title: 'Analysis and Planning',
+                desc: `Requirement Gathering is the beginning yet most prominent part of our development process. No project yields strong and sustainable results without shrewd scrutinous analysis and planning.
+                Our more than qualified team of experts perform detailed analysis to identify our clients' overall requirements ensuring the software performs phenomenally at the end.
+                `,
             },
             {
                 imageURL: '/assets/app-development.jpeg',
                 title: 'Design & Prototyping',
-                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
-                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+                desc: `We create eye-catchy designs with the help of the latest tools of designing. After completing ideation, our product team begins to create the ideal solution that our clients' deserve. Prototyping is done inherently during design with the purpose of facilitating the users of the software to assess the proposals of our developers beforehand. The consequent user reviews are noted to perform iterations to the prototype constructing the best prototype for development.`,
             },
             {
                 imageURL: '/assets/app-development.jpeg',
                 title: 'Development',
-                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
-                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+                desc: `The development gets started on the preferable platforms with complete transparency. Our Team of expert software developers initiate the development of the software creating all the required components and functionalities of the software.s`,
             },
             {
                 imageURL: '/assets/app-development.jpeg',
                 title: 'Testing',
-                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
-                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+                desc: `We do not compromise in the quality so we make sure you get 100% bug-free applications. Testing ensures whether the initial design concept worked. The products we make strictly go through rigorous testing and validation processes before they are launched. `,
             },
             {
                 imageURL: '/assets/app-development.jpeg',
-                title: 'Launch',
-                desc: `Rhoncus pretium, varius viverra tristique. Aliquet facilisis ridiculus porttitor nullam. Eu sed nunc bibendum condimentum diam, tempus mauris. Id quis sed molestie et pellentesque quam nunc. Tortor odio diam tristique vestibulum erat lacus. Fringilla quam netus neque placerat quisque bibendum.
-                arcu scelerisque molestie viverra ultricies tempus vel sed vel.Non orci purus luctus morbi.Sit orci nisl, diam consectetur enim non imperdiet.Sollicitudin arcu eu eu, cursus.Ultricies accumsan interdum quisque libero pellentesque tincidunt morbi pellentesque.Purus`,
+                title: 'Deployment',
+                desc: `Your app is ready to appear on the web at this stage of development. Product design merely doesn't cease after its launch and is continued as long as the product is in use. Our team incessantly keeps learning and improving the products that provide optimum performance to the users.We give support and answer every query after deployment.`,
             },
 
         ]
@@ -99,8 +96,8 @@ export const content = {
     servicesPage: {
         heroSection: {
             title: 'Services',
-            subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
-            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
+            subtitle: 'The Root Level helps businesses gain a competitive edge with solutions on Mobile application, web development, and other software development services.',
+            description: 'The only expression that "Root" should follow is "Super! And that’s exactly the feeling we work towards extending towards our clients.',
             bg: '#008080',
             heroPic: "/assets/blog-hero-pic.svg"
         },
@@ -140,8 +137,9 @@ export const content = {
         ]
     },
     contactPage: {
-        title: 'Let’s build together',
-        subtitle: 'Please tell us a bit about you, your project, and how best to reach you. We’ll get right back to you.',
+        title: 'Let’s Talk',
+        subtitle: `We’re open to discussing your ideas and look forward to bringing them to life.
+        Schedule a free consultation with us to build the right product with the right team.`,
         faqs: [
             {
                 question: 'How long does it take to build a website?',
@@ -218,23 +216,23 @@ export const content = {
                 imageURL: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
                 isImageRight: true,
                 tag: 'Our Vision',
-                title: 'Talented people, working together',
-                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.'
+                title: 'Leaders of Tomorrow',
+                description: 'Our vision is in pursuing pure perseverance and innovation, we visualize ourselves as the leaders of tomorrow in our field of technology and embody the epitome of excellency.'
             },
             {
                 imageURL: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
                 isImageRight: false,
-                tag: 'Our Values',
-                title: 'Talented people, working together',
-                description: 'Our mission is to enable people anywhere to solve big problems. Our customers choose us because we help innovate and adapt faster with world-class engineers and product engineering practices.'
+                tag: 'Our Goals',
+                title: 'Taking Control',
+                description: 'Our goal is to facilitate our clients with A-class IT solutions, enabling them to take full control of their business and their fate. It is our duty to spark the flame that will change the world for better.'
             },
         ]
     },
     careerPage: {
         heroSection: {
             title: 'Career',
-            subtitle: 'Ac sed auctor vel volutpat facilisis nunc. Dictum eget ultrices faucibus eleifend est sit tempus. Porttitor neque etiam turpis gravida scelerisque sed.',
-            description: 'We care about who we work for and the quality of work we deliver, and the impact that makes. And that shows in the results we produce together. Leapfrog is founded on a commitment to customer happiness , pride in craftsmanship, and making a difference.',
+            subtitle: 'The quality of our work has always been the symbolic character of our company. Committed to customer satisfaction, we take pride in craftsmanship and believe in making the difference.',
+            description: 'March, not work with us as we build the future of software. Here, you get to infuse your ingenuity into your work all the while passionately serving your clients.',
             bg: '#008080',
             heroPic: "/assets/aboutus-hero-pic.svg"
         },

@@ -87,16 +87,16 @@ export const defaultStyles = {
             color: '#008080'
         },
         title: {
-            fontSize: '2rem',
+            fontSize: '2.3rem',
             fontWeight: '600',
-            lineHeight: '3.75rem',
+            lineHeight: '3.5rem',
             color: '#00487C'
 
         },
         description: {
-            fontSize: '1rem',
+            fontSize: '1.2rem',
             fontWeight: 500,
-            lineHeight: '2rem',
+            lineHeight: '1.9rem',
             color: '#212529'
 
         },

@@ -3,12 +3,17 @@ import { content } from '../../content'
 import BlogCard from "../../components/Blog/BlogCard"
 import { GridContainer, FlexContainer, DefaultMarginedContainer } from "../../components/utilityStyles"
 import { sanityClient } from "../../lib/sanity";
+import { Spacer } from "../../components/What-we-do/Carousel";
+import Head from "next/head";
 
 const blogContent = { ...content.blogPage }
 
 function index({ posts: blogs }) {
     return (
         <>
+            <Head>
+                <title>Rootlevel | Blog</title>
+            </Head>
             <Hero
                 {...blogContent.heroSection}
             />
@@ -21,6 +26,7 @@ function index({ posts: blogs }) {
                     </GridContainer>
                 </FlexContainer>
             </DefaultMarginedContainer>
+            <Spacer height='3rem' />
         </>
     )
 }
