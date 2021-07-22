@@ -52,11 +52,11 @@ function Footer() {
                         <GeoInfoWrapper>
                             <GeoInfoDescWrapper>
                                 <Phone />
-                                <GeoInfoDesc>977- 983257832</GeoInfoDesc>
+                                <GeoInfoDesc>202-555-0129</GeoInfoDesc>
                             </GeoInfoDescWrapper>
                             <GeoInfoDescWrapper>
                                 <Location />
-                                <GeoInfoDesc>907 Tenmile Road, Boston</GeoInfoDesc>
+                                <GeoInfoDesc>Franklin Street, New York, USA</GeoInfoDesc>
                             </GeoInfoDescWrapper>
                             <GeoInfoDescWrapper>
                                 <Email />

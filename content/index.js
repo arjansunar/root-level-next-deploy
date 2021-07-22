@@ -77,7 +77,7 @@ export const content = {
             {
                 imageURL: '/assets/app-development.jpeg',
                 title: 'Development',
-                desc: `The development gets started on the preferable platforms with complete transparency. Our Team of expert software developers initiate the development of the software creating all the required components and functionalities of the software.s`,
+                desc: `The development gets started on the preferable platforms with complete transparency. Our Team of expert software developers initiate the development of the software creating all the required components and functionalities of the software.`,
             },
             {
                 imageURL: '/assets/app-development.jpeg',
@@ -87,7 +87,7 @@ export const content = {
             {
                 imageURL: '/assets/app-development.jpeg',
                 title: 'Deployment',
-                desc: `Your app is ready to appear on the web at this stage of development. Product design merely doesn't cease after its launch and is continued as long as the product is in use. Our team incessantly keeps learning and improving the products that provide optimum performance to the users.We give support and answer every query after deployment.`,
+                desc: `Your app is ready to appear on the web at this stage of development. Product design merely doesn't cease after its launch and is continued as long as the product is in use.  Our team incessantly keeps learning and improving the products that provide optimum performance to the users. We give support and answer every query after deployment.`,
             },
 
         ]
