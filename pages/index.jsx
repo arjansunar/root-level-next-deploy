@@ -23,11 +23,7 @@ export default function Home() {
         {...homeContent.heroSection}
       // imageProps={{ imageURL: "https://images.unsplash.com/photo-1517339461380-928f5f4def9b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80" }}
       />
-      <PartnerSection />
-      <IconCards cardContent={iconCardContent} />
-      <Testimonials />
 
-      <Spacer height='6rem' />
       <SectionIconWrapper>
         <SectionInfo
           title='We are the solution to your problem'
@@ -37,7 +33,7 @@ export default function Home() {
           <InfoCard
             iconPath='/assets/what-we-do-user-centric.svg'
             title='User Centric'
-            desc=" Software users' are always kept at the center of the product design and development, focusing on the end users' utility. Our products are developed taking into account the user's objectives, needs and feedback."
+            desc=" Software users' are always kept at the center of the product design and development, focusing on the end users' utility. Our products are developed, taking into account, the user's objectives, needs and feedback."
 
           />
           <InfoCard
@@ -56,6 +52,12 @@ export default function Home() {
         </CardGridWrapper>
 
       </SectionIconWrapper>
+      <IconCards cardContent={iconCardContent} />
+      <PartnerSection />
+
+      <Testimonials />
+      <Spacer height='6rem' />
+
     </div>
   )
 }

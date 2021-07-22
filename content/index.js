@@ -77,7 +77,7 @@ export const content = {
             {
                 imageURL: '/assets/app-development.jpeg',
                 title: 'Development',
-                desc: `The development gets started on the preferable platforms with complete transparency. Our Team of expert software developers initiate the development of the software creating all the required components and functionalities of the software.s`,
+                desc: `The development gets started on the preferable platforms with complete transparency. Our Team of expert software developers initiate the development of the software creating all the required components and functionalities of the software.`,
             },
             {
                 imageURL: '/assets/app-development.jpeg',
@@ -87,7 +87,7 @@ export const content = {
             {
                 imageURL: '/assets/app-development.jpeg',
                 title: 'Deployment',
-                desc: `Your app is ready to appear on the web at this stage of development. Product design merely doesn't cease after its launch and is continued as long as the product is in use. Our team incessantly keeps learning and improving the products that provide optimum performance to the users.We give support and answer every query after deployment.`,
+                desc: `Your app is ready to appear on the web at this stage of development. Product design merely doesn't cease after its launch and is continued as long as the product is in use.  Our team incessantly keeps learning and improving the products that provide optimum performance to the users. We give support and answer every query after deployment.`,
             },
 
         ]
@@ -206,7 +206,7 @@ export const content = {
         },
         sections: [
             {
-                imageURL: ' https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80',
+                imageURL: 'https://images.unsplash.com/photo-1521316730702-829a8e30dfd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80',
                 isImageRight: false,
                 tag: 'Our Mission',
                 title: 'Transform Ideas to products',
