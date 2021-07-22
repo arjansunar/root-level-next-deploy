@@ -56,7 +56,7 @@ function Footer() {
                             </GeoInfoDescWrapper>
                             <GeoInfoDescWrapper>
                                 <Location />
-                                <GeoInfoDesc>Baneshwor, Kathmandu</GeoInfoDesc>
+                                <GeoInfoDesc>907 Tenmile Road, Boston</GeoInfoDesc>
                             </GeoInfoDescWrapper>
                             <GeoInfoDescWrapper>
                                 <Email />

@@ -3,7 +3,10 @@ import { defaultStyles } from '../../defaults/defaults'
 import { Title, TitleWrapper } from "./utils"
 
 import Image from 'next/image'
+import { content } from "../../content"
+import { call } from "function-bind"
 
+const whatWeOfferContent = [...content.careerPage.whatWeOffer]
 function WhatWeOfferSection({ sectionTitle, sectionSubtitle }) {
     return (
         <StyledSection>
@@ -12,42 +15,22 @@ function WhatWeOfferSection({ sectionTitle, sectionSubtitle }) {
 
             <ImageSection>
                 <TitleWrapper>
-                    <Title>What we offer you</Title>
+                    <Title>What we offer </Title>
                 </TitleWrapper>
                 <ImageWrapper>
-                    <ImageCard>
-                        <Image src='/assets/career/testcareerimg.png' height='272px' width='380px' alt='' />
-                        <TextWrapper>
-                            <TextTitle>
-                                Ideal environment
-                            </TextTitle>
-                            <TextDesc>
-                                Ut velit, dui leo volutpat. Nssdec, id duis quam nibh non vulputate viverra netus sed. Diam eu porttitor nnon vulpu esponsible for buildin
-                            </TextDesc>
-                        </TextWrapper>
-                    </ImageCard>
-                    <ImageCard>
-                        <Image src='/assets/career/testcareerimg.png' height='272px' width='380px' alt='' />
-                        <TextWrapper>
-                            <TextTitle>
-                                Ideal environment
-                            </TextTitle>
-                            <TextDesc>
-                                Ut velit, dui leo volutpat. Nssdec, id duis quam nibh non vulputate viverra netus sed. Diam eu porttitor nnon vulpu esponsible for buildin
-                            </TextDesc>
-                        </TextWrapper>
-                    </ImageCard>
-                    <ImageCard>
-                        <Image src='/assets/career/testcareerimg.png' height='272px' width='380px' alt='' />
-                        <TextWrapper>
-                            <TextTitle>
-                                Ideal environment
-                            </TextTitle>
-                            <TextDesc>
-                                Ut velit, dui leo volutpat. Nssdec, id duis quam nibh non vulputate viverra netus sed. Diam eu porttitor nnon vulpu esponsible for buildin
-                            </TextDesc>
-                        </TextWrapper>
-                    </ImageCard>
+                    {whatWeOfferContent.map((val, i) =>
+                        <ImageCard key={i}>
+                            <Image src={val.image} height='272px' width='380px' alt='' />
+                            <TextWrapper>
+                                <TextTitle>
+                                    {val.title}
+                                </TextTitle>
+                                <TextDesc>
+                                    {val.description}
+                                </TextDesc>
+                            </TextWrapper>
+                        </ImageCard>
+                    )}
                 </ImageWrapper>
             </ImageSection>
         </StyledSection>
@@ -121,7 +104,7 @@ const TextTitle = styled.h3`
 const TextDesc = styled.p`
     margin-top: 0.75rem;
     padding: 0.5rem 1rem;
-
+    /* text-align: left; */
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
