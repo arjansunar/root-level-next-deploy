@@ -236,5 +236,24 @@ export const content = {
             bg: '#008080',
             heroPic: "/assets/aboutus-hero-pic.svg"
         },
+        whatWeOffer: [
+            {
+                title: 'Ideal Environment',
+                description: `He or she, who said “working in an environment that suits your personal and professional requirements is one of the critical elements of career success” wasn't wrong at all. Root Level facilitates its employees with the ideal working environment which is centered around working as a team allowing everyone's skills to flourish. Our community advocates collaboration and stimulates wisdom by developing a culture of mentorship.`,
+                image: '/assets/career/testcareerimg.png'
+            },
+            {
+                title: 'Flexible Working',
+                description: 'Flexibility at work is associated with time, job function and location as well. Flexibility penetrates our working environment. Contrary to the traditional 9-to-5,  we offer our employees flexible work schedules and arrangements, allowing work at variable hours and also offer remote work. We adapt to changes in the market to suit our employees expectations and render satisfaction to our employees and clients. ',
+                image: '/assets/career/testcareerimg.png'
+
+            },
+            {
+                title: 'Professional Support',
+                description: 'We provide our staff with professional support and guidance to help them fare better and work for optimum results. As employees face the growing pressure to develop themselves to the rapidly shifting working environments, our HR management and team leaders are committed to our employees’ professional growth because we believe that a workplace only develops as fast as its employees',
+                image: '/assets/career/testcareerimg.png'
+
+            },
+        ]
     }
 }
