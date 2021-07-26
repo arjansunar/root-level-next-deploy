@@ -31,19 +31,19 @@ export default function Home() {
         />
         <CardGridWrapper>
           <InfoCard
-            iconPath='/assets/what-we-do-user-centric.svg'
+            iconPath='/assets/user-centric.svg'
             title='User Centric'
             desc=" Software users' are always kept at the center of the product design and development, focusing on the end users' utility. Our products are developed, taking into account, the user's objectives, needs and feedback."
 
           />
           <InfoCard
-            iconPath='/assets/what-we-do-user-centric.svg'
+            iconPath='/assets/innovative.svg'
             title='Innovation Driven'
             desc="Innovation resides in our heart. It's what makes or breaks a company. Through relentless experimentation and iteration, we advance the existing frameworks of innovation models.."
 
           />
           <InfoCard
-            iconPath='/assets/what-we-do-user-centric.svg'
+            iconPath='/assets/engineering.svg'
             title='Excellent Engineering'
             desc="Our Excellency in Engineering is identified from key aspects of Craftsmanship, effectiveness, productivity, satisfaction. Our team of engineers all-equipped with the modern skills are devoted towards building the products right.
             "
