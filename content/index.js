@@ -155,44 +155,41 @@ export const content = {
             },
             {
                 question: `What's with the name The Root Level?`,
-                answer: `Well that's an interesting question you have. We opt-to treat every customer with the "super" tagline. As the name suggests, Root- the super user thus the name "The Root Level"`
+                answer: `Well that's an interesting question you have. We opt-to treat every customer with the "super" tagline. As the name suggests, Root- the super user thus the name "The Root Level".`
             },
             {
                 question: 'What can you help me with?',
-                answer: ''
+                answer: 'Here at RootNepal, We are all goal oriented professionals  with a plethora of experience in developing mobile, desktop, and web applications to suit your needs near perfectly.'
             },
             {
                 question: 'How do I create a product with your company?',
-                answer: ''
+                answer: 'Browse through the How we work section on the Services page and get a thorough insight on how the product will be built. Hesitate not to contact us for any queries.'
             },
             {
                 question: 'Why should you trust us?',
-                answer: ''
+                answer: 'As stated for a myriad of times, we are professionals of the field, very adept at doing what we do.  Room for errors, we got none!'
             },
             {
                 question: `Do you provide technical support and maintenance?`,
-                answer: ``
+                answer: `Yes, we have a dedicated software maintenance team equipped with top tier technology tendencies to ensure you maximum uptime of your application and also assuring the applications dynamic compliance with the prevalent industry standards.  `
             },
-            {
-                question: `What technology do you use?`,
-                answer: ``
-            },
+          
             {
                 question: `How much do you charge for a project?`,
-                answer: ``
+                answer: `Any IT project's cost is affected by a number of factors, such as the cost of time spent, the developer, features and functionalities  that vary appwise, complexity and design of the project and other miscellaneous needs and attachments. So, the charge is fixed accommodating all the expenses and expenditures that incur throughout the project development. `
             },
             {
                 question: `How do you ensure privacy and confidentiality?`,
-                answer: ``
+                answer: `Our business ethics are based on client confidentiality. We ensure privacy and confidentiality following a systematic way of identifying sensitive data, understanding prevalent business processes, crafting appropriate access, usage and distribution policies and also monitoring outgoing and internal communications. `
             },
             {
                 question: `How do I contact your team?`,
-                answer: ``
+                answer: `Send us a message using the facilitated form above for scheduling a free consultation with our team.`
             },
             {
                 question: `Can I become a part of your team?
                 `,
-                answer: ``
+                answer: `Yes, send us your updated resume for review. We are also hiring currently, kindly browse through current available vacancies.`
             },
         ]
     },
