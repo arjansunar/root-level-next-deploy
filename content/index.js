@@ -5,7 +5,7 @@ export const content = {
             subtitle: 'We are a technology company enabling software-powered businesses to help them reengineer their business process. ',
             description: ' We collaborate with our clients to implement technology strategies that generate business resilience and competitiveness. Clients can streamline their business conduction process and improve in-house business capabilities with the support of our highly capable team of developers, engineers, and designers.',
             bg: '#008080',
-            heroPic: "/assets/blog-hero-pic.svg",
+            heroPic: "/assets/illustrations/home.svg",
         },
         testimonials: [{
             description: '“Arcu mattis vel nunc in. Metus pretium egestas fermentum ut adipiscing vitae lorem nulla varius. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliquet in ac us. Lectus risus posuere libero nulla. Nec tempor ut dolor vulputate nisl. Egestas aliq sit consequat ”',
@@ -50,17 +50,17 @@ export const content = {
             subtitle: 'At Root Level, we value innovation. Learn great innovation stories from different bloggers and get an insight into the world of computing and information technology. ',
             description: 'Business today knows no horizon, all by the grace of technology, part of the reason why we are overtly ready to empower your business with all kinds of sophisticated tech solutions required to overcome any challenges that your business is presented with.',
             bg: '#008080',
-            heroPic: "/assets/blog-hero-pic.svg"
+            heroPic: "/assets/illustrations/blog.svg"
         }
     },
     whatWeDoPage: {
-        heroSection: {
-            title: 'One step ahead',
-            subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
-            description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
-            bg: '#008080',
-            heroPic: "/assets/blog-hero-pic.svg"
-        },
+        // heroSection: {
+        //     title: 'One step ahead',
+        //     subtitle: 'Bibendum leo at amet, amet, blandit euismod adipiscing. In accumsan vitae erat vestibulum. Pretium tellus, tortor faucibus quis fusce egestas.',
+        //     description: 'From custom mobile and web applications to data-driven platforms - we help enterprises transform and new companies launch and scale.',
+        //     bg: '#008080',
+        //     heroPic: "/assets/blog-hero-pic.svg"
+        // },
         imageInfoSection: [
             {
                 imageURL: '/assets/app-development.jpeg',
@@ -99,7 +99,7 @@ export const content = {
             subtitle: 'The only expression that "Root" should follow is "Super! And that’s exactly the feeling we work towards extending towards our clients.',
             description: 'The Root Level helps businesses gain a competitive edge with solutions on Mobile application, web development, and other software development services.',
             bg: '#008080',
-            heroPic: "/assets/blog-hero-pic.svg"
+            heroPic: "/assets/illustrations/services.svg"
         },
 
         cards: [
@@ -199,7 +199,7 @@ export const content = {
             subtitle: 'Root Level is a technology services company delivering products, solutions, and systems that empower your business.',
             description: 'We empower companies with our industry-standard digital solutions. Our team of dedicated developers, engineers, and designers deliver end-to-end fully equipped software solutions for your business.',
             bg: '#008080',
-            heroPic: "/assets/aboutus-hero-pic.svg"
+            heroPic: "/assets/illustrations/about.svg"
         },
         sections: [
             {
@@ -231,7 +231,7 @@ export const content = {
             subtitle: 'March, not work with us as we build the future of software. Here, you get to infuse your ingenuity into your work all the while passionately serving your clients.',
             description: 'The quality of our work has always been the symbolic character of our company. Committed to customer satisfaction, we take pride in craftsmanship and believe in making the difference.',
             bg: '#008080',
-            heroPic: "/assets/aboutus-hero-pic.svg"
+            heroPic: "/assets/illustrations/career.svg"
         },
         whatWeOffer: [
             {

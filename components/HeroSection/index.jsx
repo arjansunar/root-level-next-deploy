@@ -26,7 +26,7 @@ function Hero({ imageProps, title, subtitle, description, bg, heroPic }) {
                 </TextSection>
                 {heroPic ?
                     <HeroPicWrapper >
-                        <img src={heroPic} alt="" />
+                        <img src={heroPic} alt=""/>
                     </HeroPicWrapper>
                     : ''}
             </Wrapper>
