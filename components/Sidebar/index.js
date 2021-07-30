@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/link-passhref */
 import React from 'react'
 import Link from 'next/link'
-import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarLink, SideBarMenu } from './SidebarElements'
+import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarLink, SideBarMenu, StyledBtn } from './SidebarElements'
+import { useRouter } from 'next/dist/client/router'
 
-function index({ isOpen, toggle }) {
+function MobileMenu({ isOpen, toggle }) {
+    const router = useRouter()
     return (
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
             <Icon onClick={toggle}>
@@ -11,9 +13,9 @@ function index({ isOpen, toggle }) {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <Link href="/what-we-do">
+                    <Link href="/">
                         <SideBarLink onClick={toggle}>
-                            What we do
+                            Home
                         </SideBarLink>
                     </Link>
 
@@ -32,10 +34,17 @@ function index({ isOpen, toggle }) {
                             About Us
                         </SideBarLink>
                     </Link>
+
+                    <Link href="/career">
+                        <SideBarLink onClick={toggle}>
+                            Career
+                        </SideBarLink>
+                    </Link>
+                <StyledBtn onClick={() => router.push("/contact")}>Get Started</StyledBtn>
                 </SideBarMenu>
             </SideBarWrapper>
         </SideBarContainer>
     )
 }
 
-export default index
+export default MobileMenu
