@@ -25,6 +25,9 @@ export const Nav = styled.nav`
         transition: 0.8s all ease;
     }
 
+    @media (max-width: 550px){
+        padding: 0 2rem;
+    }
    
 
 `
@@ -42,6 +45,10 @@ export const Logo = styled.a`
     & img {
         width: 100%;
         height: 100%;
+    }
+
+    @media (max-width: 550px){
+        margin-left: 0;
     }
 `
 

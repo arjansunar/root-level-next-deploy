@@ -50,6 +50,9 @@ const PrevButton = styled.button`
     ${sharedButtonStyles}
     left: 1rem;
 
+    @media (max-width: 1000px){
+        display: none;
+    }
 `
 const NextButton = styled.button`
     ${sharedButtonStyles}
@@ -57,6 +60,10 @@ const NextButton = styled.button`
 
     & img{
         transform: rotate(-180deg);
+    }
+
+    @media (max-width: 1000px){
+        display: none;
     }
 `
 const Indicator = styled.div`

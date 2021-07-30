@@ -40,4 +40,13 @@ const ImageWrapper = styled.div`
     grid-row-gap: 24px;
     margin: 0 auto;
 
+    @media (max-width: 700px ){
+        grid-template-columns: repeat(3,1fr);
+    }
+
+
+    @media (max-width: 600px ){
+        grid-template-columns: repeat(2,1fr);
+    }
+
 `

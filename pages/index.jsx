@@ -66,6 +66,10 @@ const SectionIconWrapper = styled.div`
     background: #35B5AC1F;
     padding: .5rem 5rem;
 
+    @media (max-width: 550px){
+      padding: .5rem 2rem;
+    }
+
 `
 const CardGridWrapper = styled.div`
     display: grid;

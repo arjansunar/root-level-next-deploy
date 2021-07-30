@@ -26,6 +26,8 @@ export default Testimonials
 
 const Container = styled.div`
     margin-top: 10rem;
+    padding: 0 .8rem;
+
 `
 //single testimonial 
 function Testimonial({ description, authorPic, authorName, authorPosition }) {
@@ -58,7 +60,6 @@ const Wrapper = styled.div`
     display: grid;
     place-content: center;
     margin-bottom: 3.5rem;
-
 `
 const QuoteDecor = styled.div`
     display: grid;
@@ -74,6 +75,14 @@ const Desc = styled.p`
     letter-spacing: 0em;
     text-align: center;
     max-width: 980px;
+
+    @media (max-width: 1000px){
+        font-size: 22px;
+    }
+
+    @media (max-width: 650px){
+        font-size: 20px;
+    }
 `
 const AuthorWrapper = styled.div`
     margin-top: 1.25rem;

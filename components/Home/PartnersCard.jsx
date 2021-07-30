@@ -16,4 +16,8 @@ const ImgWrapper = styled.div`
     max-width: 180px;
     border: 1px solid #E6E6E6;
     padding: 2.875rem 2.125rem;
+
+    @media (max-width: 550px){
+        padding: 2rem 1.825rem;
+    }
 `

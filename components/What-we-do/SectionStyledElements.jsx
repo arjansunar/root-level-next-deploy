@@ -14,6 +14,11 @@ export const Title = styled.h2`
     line-height: ${infoStyles.title.lineHeight};
     color: ${infoStyles.title.color};
     font-family: ${infoStyles.title.fontFamily};
+
+    @media (max-width: 550px){
+        font-size: calc( ${infoStyles.title.fontSize} * 0.7);
+        line-height: calc(${infoStyles.title.lineHeight} * 0.7);
+    }
 `
 
 export const Desc = styled.p`
@@ -24,4 +29,9 @@ export const Desc = styled.p`
     line-height: ${infoStyles.description.lineHeight};
     color: ${infoStyles.description.color};
     font-family: ${infoStyles.description.fontFamily};
+
+    @media (max-width: 550px){
+        font-size: calc( ${infoStyles.description.fontSize} * 0.9);
+        line-height: calc(${infoStyles.description.lineHeight} * 0.9);
+    }
 `
