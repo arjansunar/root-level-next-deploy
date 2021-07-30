@@ -20,6 +20,18 @@ export const FlexContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 1.5rem 5rem 2.5rem 5rem;
+
+    @media (max-width: 500px){
+        padding: 1.5rem 4rem 2.5rem 4rem;
+    }
+
+    @media (max-width: 430px){
+        padding: 1.5rem 3rem 2.5rem 3rem;
+    }
+
+    @media (max-width: 380px){
+        padding: 1.5rem 2rem 2.5rem 2rem;
+    }
 `
 export const DefaultMarginedContainer = styled.section`
     margin-top: ${({ top }) => (top ? top : '4rem')};

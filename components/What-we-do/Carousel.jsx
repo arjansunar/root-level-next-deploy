@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { StyledCarousel } from '../Home/utility/Carousel'
+import { Indicator, StyledCarousel } from '../Home/utility/Carousel'
 import IconWrapper from './IconWrapper'
 
 
@@ -72,10 +72,14 @@ export default function WhatWeDoCarousel({ children }) {
 
             <StyledCarousel
                 showArrows={false}
-                showIndicators={false}
+                showIndicators={true}
                 showThumbs={false}
                 showStatus={false}
                 selectedItem={currentSlide}
+
+                renderIndicator={(onClickHandler, isSelected, index, label) =>
+                    <Indicator onClick={onClickHandler} active={isSelected} title={`Selected: ${label} ${index + 1}`} aria-label={`Selected: ${label} ${index + 1}`} />
+                }
             >
                 {children}
             </StyledCarousel>
@@ -95,10 +99,15 @@ const Icons = styled.div`
     justify-content: center;
     align-items: flex-start;
     max-width: 1180px;
+    flex-wrap: wrap;
     margin: 0rem 2rem 3.625rem 2rem;
     box-shadow: 0px 3px 8px 0px #0000001A;
     padding: 3rem 4rem;
     border-radius: 1rem;
+
+    @media (max-width: 650px){
+        display: none;
+    }
 
 `
 const IconContainer = styled.div`

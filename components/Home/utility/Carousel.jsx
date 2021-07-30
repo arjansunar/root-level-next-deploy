@@ -35,6 +35,14 @@ export default HomeCarousel
 
 export const StyledCarousel = styled(Carousel)`
     position: relative;
+    & .control-dots{
+        display: none;
+        bottom: unset;  
+
+        @media (max-width: 650px){
+            display: block;
+        }
+    }
 `
 
 const sharedButtonStyles = css`
@@ -66,7 +74,7 @@ const NextButton = styled.button`
         display: none;
     }
 `
-const Indicator = styled.div`
+export const Indicator = styled.div`
     height: 12px;
     width: 12px;
     display: inline-block;

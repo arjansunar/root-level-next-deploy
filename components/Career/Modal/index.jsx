@@ -1,31 +1,17 @@
 import React from 'react'
-import { ApplyWrapper, Button, ButtonWrapper, Desc, Label, List, ListItem, OverviewWrapper, StyledButton, Title, Wrapper } from './ModalElements'
+import { ApplyWrapper, Button, ButtonWrapper, Desc, FlexContainer, Label, List, ListItem, OverviewWrapper, StyledButton, Title, Wrapper } from './ModalElements'
 import Form from './Form';
-// const content = {
-//     position: 'React Developer',
-//     experience: '1-2 years',
-//     postDate: '16 July 2021',
-//     roleOverview: 'We are looking for a Front-End Web Developer who is motivated to combine the art of design with the art of programming. You will work with the UI/UX designer and bridge the gap between graphical design and technical implementation, taking an active role on both sides and defining how the application looks as well as how it works.',
-//     responsibilities: [
-//         'Develop new user-facing features',
-//         'Build reusable code and libraries for future useIndependently craft project solutions by applying solid Object-Oriented-Design principles.',
-//         'Ensure the technical feasibility of UI/UX designs',
-//         'Optimize application for maximum speed and scalability',
-//         'Assure that all user input is validated before submitting to back-end',
-//         'Collaborate with other team members and stakeholders',
-//         'Optimize application for maximum speed and scalability',
-//         'Assure that all user input is validated before submitting to back-end',
-//         'Collaborate with other team members and stakeholders'
-//     ]
 
-// }
 function StyledModal({ content, jobTitle,
     experience,
-    postDate, }) {
+    postDate,closeModal}) {
     return (
         <Wrapper>
             <OverviewWrapper>
-                <Title>overview</Title>
+                <FlexContainer>
+                    <Title>overview</Title>
+                    <StyledButton closeBtn onClick={closeModal}>X</StyledButton>
+                </FlexContainer>
                 <ButtonWrapper>
                     <Button>
                         <Label>Position</Label>
@@ -59,3 +45,4 @@ function StyledModal({ content, jobTitle,
 }
 
 export default StyledModal
+
