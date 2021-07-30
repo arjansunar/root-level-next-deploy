@@ -26,15 +26,15 @@ background: #A1A4A41A;
 padding: 2.5rem 6rem; 
 
     @media (max-width: 650px){
-        padding: 2.5rem 4rem; 
+        padding: 3.5rem 4rem; 
     }
 
 
     @media (max-width: 450px){
-        padding: 2.5rem 3.5rem; 
+        padding: 3.5rem 3.5rem; 
     }
     @media (max-width: 350px){
-        padding: 2.5rem 2.5rem; 
+        padding: 3.5rem 2.5rem; 
     }
 ;
 `
