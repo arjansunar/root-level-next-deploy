@@ -4,7 +4,17 @@ import Image from "next/image"
 export const PostWrapper = styled.article`
     font-family: 'Montserrat', sans-serif;
     max-width: 820px;
-    margin: 2rem 0 7rem 3rem;
+    padding: 2rem 1rem 7rem 3rem;
+
+    @media (max-width: 800px){
+        padding: 2rem 3rem;
+    }
+    @media (max-width: 500px){
+        padding: 2rem 2rem;
+    }
+    @media (max-width: 400px){
+        padding: 2rem 1.5rem;
+    }
 `
 export const PostHeadSection = styled.div`
     margin-top: 2rem;
@@ -29,6 +39,17 @@ export const Title = styled.h1`
     text-align: left;
     color: #1E2A37;
     margin-top:1rem;
+
+    @media (max-width: 500px){
+        font-size: 40px;
+        line-height: 48px;
+
+    }
+
+    @media (max-width: 400px){
+        font-size: 38px;
+        line-height: 45px;
+    }
 `
 export const MainImage = styled(Image)`
     margin-top: 1.5rem;
@@ -49,6 +70,10 @@ export const PostContent = styled.main`
 
         h1 , h2 {
             margin-top: 3.625rem;
+
+            @media (max-width: 500px){
+                margin-top: 2.7rem;
+            }
         }
 
         h3, h4{

@@ -42,6 +42,7 @@ export default WhatWeOfferSection
 
 const StyledSection = styled.section`
    font-family: ${defaultStyles.careerPage.fontFamily};
+   padding: 0 1.5rem;
 `
 const whatWeOfferStyles = { ...defaultStyles.careerPage.whatWeOfferSection }
 const SectionTitle = styled.h2`
