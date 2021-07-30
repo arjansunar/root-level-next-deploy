@@ -16,6 +16,9 @@ export const Title = styled.h2`
     color: #43475A;
     position: relative;
 
+    @media (max-width: 350px){
+    font-size: 28px;
+    }
     &::before{
         position: absolute;
         content: '';

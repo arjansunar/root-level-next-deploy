@@ -56,7 +56,7 @@ function CareerCard({
                 afterOpen={afterOpen}
                 beforeClose={beforeClose}
             >
-                <Jd content={modalContent} jobTitle={jobTitle} experience={experience} postDate={postDate} />
+                <Jd content={modalContent} jobTitle={jobTitle} experience={experience} postDate={postDate} closeModal={handleCloseModal}/>
 
             </StyledModal>
 

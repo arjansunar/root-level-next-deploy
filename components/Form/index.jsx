@@ -189,13 +189,31 @@ const StyledButton = styled(NavButton)`
     border-radius: 500px;
     text-transform: none;
 
+    & span{
+        margin-top: 5px;
+    }
     @media screen{
         display:flex;
         align-items:center
     }
-    & span{
-        /* margin-top:1rem; */
+
+    @media (max-width: 600px){
+        padding: 1rem 2rem;
     }
+
+    @media (max-width: 500px){
+    font-size: 1.3rem;
+    }
+
+    @media (max-width: 450px){
+        padding: .8rem 1.2rem;
+        font-size: 1rem;
+
+        & span{
+            margin-top: 1px;
+        }
+    }
+    
 
 `
 const StyledError = styled.div`

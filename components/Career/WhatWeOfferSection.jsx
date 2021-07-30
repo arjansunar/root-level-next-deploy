@@ -53,6 +53,10 @@ const SectionTitle = styled.h2`
     color: #008080;
     margin-top: 5rem;
 
+    @media (max-width: 550px){
+        font-size: calc(${whatWeOfferStyles.title.fontSize}*.8);
+    }
+
 `
 const SectionSubtitle = styled.h3`
     font-size: ${whatWeOfferStyles.subTitle.fontSize};
