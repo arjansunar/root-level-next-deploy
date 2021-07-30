@@ -25,6 +25,17 @@ const Wrapper = styled.div`
 background: #A1A4A41A;
 padding: 2.5rem 6rem; 
 
+    @media (max-width: 650px){
+        padding: 2.5rem 4rem; 
+    }
+
+
+    @media (max-width: 450px){
+        padding: 2.5rem 3.5rem; 
+    }
+    @media (max-width: 350px){
+        padding: 2.5rem 2.5rem; 
+    }
 ;
 `
 const Title = styled.h2`
@@ -35,6 +46,10 @@ const Title = styled.h2`
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
+
+    @media (max-width: 450px){
+        font-size: 30px;
+    }
 `
 const GridWrapper = styled.div`
     margin-top: 2.5rem;
@@ -61,6 +76,10 @@ const Description = styled.p`
     line-height: 28px;
     letter-spacing: 0em;
     text-align: left;
+
+    @media (max-width: 450px){
+        font-size: 18px;
+    }
 
 `
 const Img = styled(Image)`
