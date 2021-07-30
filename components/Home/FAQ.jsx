@@ -25,6 +25,10 @@ export const Title = styled.h2`
     letter-spacing: 0em;
     text-align: center;
     margin-bottom: 3rem;
+
+    @media (max-width: 450px){
+        font-size: 36px;
+    }
 `
 const FWrapper = styled.div`
     padding: 0 6rem;

@@ -99,7 +99,7 @@ export const FooterPrivacyBlock = styled.div`
     font-weight: 400;
     line-height: 20px;
     letter-spacing: 0em;
-    /* text-align: center; */
+    text-align: center;
 
 `
 export const FooterBottomCopyRight = styled.p`
@@ -111,6 +111,6 @@ export const FooterBottomCopyRight = styled.p`
     letter-spacing: 0em;
     text-transform: uppercase;
     margin-top: 1rem;
-    /* text-align: center; */
+    text-align: center;
 
 `

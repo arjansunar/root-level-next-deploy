@@ -15,8 +15,7 @@ const backgroundStylesWithImage = css`
         background: #2c3e7ba6;
     }
 `
-const backgroundStylesWithOutImage = css`
-`
+
 export const Wrapper = styled.div`
     width: 100%;
     height: fit-content;
@@ -32,7 +31,9 @@ export const Wrapper = styled.div`
         flex-direction: column;
         align-items: center;
         padding: 5rem 15%;
-
+    }
+    @media (max-width: 550px){
+        padding: 4rem 2rem;
     }
    
 `
@@ -48,6 +49,16 @@ export const HeroTitle = styled.h1`
     font-size: ${heroTitleStyles.fontSize};
     line-height: ${heroTitleStyles.lineHeight};
     margin-bottom: 3.8rem;
+
+    @media (max-width: 750px){
+        margin-bottom: 3rem;
+    }
+
+    @media (max-width: 550px){
+        margin-bottom: 2rem;
+        font-size: calc(${heroTitleStyles.fontSize}* .8);
+        line-height: calc(${heroTitleStyles.lineHeight}*.8);
+    }
 `
 // hero section subtilte styles 
 const heroSubTitleStyles = { ...defaultStyles.heroSection.subTitle };
@@ -57,6 +68,12 @@ export const HeroSubtitle = styled.h2`
     font-size: ${heroSubTitleStyles.fontSize};
     line-height: ${heroSubTitleStyles.lineHeight};
     margin-bottom: 2rem;
+
+    @media (max-width: 550px){
+        margin-bottom: 1.5rem;
+        font-size: calc(${heroSubTitleStyles.fontSize}* .9);
+        line-height: calc(${heroSubTitleStyles.lineHeight}*.9);
+    }
 `
 //hero section desc styles 
 const heroDescStyles = { ...defaultStyles.heroSection.description };
@@ -66,6 +83,11 @@ export const HeroP = styled.p`
     font-size: ${heroDescStyles.fontSize};
     line-height: ${heroDescStyles.lineHeight};
     
+    @media (max-width: 550px){
+        margin-bottom: 1.5rem;
+        font-size: calc(${heroDescStyles.fontSize}* .9);
+        line-height: calc(${heroDescStyles.lineHeight}*.9);
+    }
 `
 
 export const HeroPicWrapper = styled.div`
