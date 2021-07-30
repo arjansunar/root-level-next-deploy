@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa'
+import { NavButton } from '../Navbar/NavbarElements'
 
 export const SideBarContainer = styled.aside`
     position: fixed;
@@ -66,3 +67,9 @@ export const SideBarLink = styled.a`
     }
 `
 
+export const StyledBtn= styled(NavButton)`
+    justify-self: center;
+    @media screen and (max-width: 1000px){
+        display: flex;
+    }
+`
