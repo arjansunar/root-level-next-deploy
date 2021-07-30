@@ -6,7 +6,8 @@ export const SideBarContainer = styled.aside`
     position: fixed;
     z-index: 999;
     width: 100vw;
-    height: 100%;
+    height: fit-content;
+    overflow-y: scroll;
     /* background: #0d0d0d; */
     background: linear-gradient(295.03deg, #3A61BD 12.79%, #372F71 91.46%);
 
