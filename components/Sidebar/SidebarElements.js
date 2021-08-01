@@ -1,7 +1,20 @@
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa'
 import { NavButton } from '../Navbar/NavbarElements'
+import { defaultStyles } from '../../defaults/defaults'
 
+
+export const HeaderContainer= styled.div`
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem 0 3rem;
+    border-bottom: 2px solid ${defaultStyles.brandColor};
+
+    @media (max-width: 550px){
+        padding: 0 2rem;
+    }
+`
 export const SideBarContainer = styled.aside`
     position: fixed;
     z-index: 999;
@@ -9,19 +22,23 @@ export const SideBarContainer = styled.aside`
     height: fit-content;
     overflow-y: scroll;
     /* background: #0d0d0d; */
-    background: linear-gradient(295.03deg, #3A61BD 12.79%, #372F71 91.46%);
+    background: #fff;
 
     display: grid;
+    grid-template-rows: 90px 1fr;
     align-items: center;
-    top: 0;
+    top: 0px;
     left: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+    height: ${({ isOpen }) => (isOpen ? 'fit-content' : '0')};
+    /* top: ${({ isOpen }) => (isOpen ? '90px' : 'calc(-100% + 90px)')}; */
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: #fff;
+    color: ${defaultStyles.brandColor};
+    margin-right: 1.5rem;
+    margin-top: .5rem;
 
 `
 
@@ -35,7 +52,7 @@ export const Icon = styled.div`
     outline: none;
 `
 export const SideBarWrapper = styled.div`
-    color: #fff;
+    color: #000;
 `
 
 export const SideBarMenu = styled.ul`
@@ -46,7 +63,7 @@ export const SideBarMenu = styled.ul`
     padding-left:0;
 
     @media screen and (max-width: 480 ){
-        grid-template-rows: repeat(4,60px);
+        grid-template-rows: repeat(4,60px); 
     }
 `
 
@@ -60,7 +77,7 @@ export const SideBarLink = styled.a`
     list-style: none;
     
     transition: 0.2s ease-in-out;
-    color: #fff;
+    color: inherit;
 
     &:hover {
         color: #01bf71;
@@ -68,6 +85,11 @@ export const SideBarLink = styled.a`
     }
 `
 
+export const BtnWrapper = styled.span`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+`
 export const StyledBtn= styled(NavButton)`
     justify-self: center;
     @media screen and (max-width: 1000px){

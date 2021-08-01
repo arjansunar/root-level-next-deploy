@@ -1,25 +1,29 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/link-passhref */
 import React from 'react'
 import Link from 'next/link'
-import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarLink, SideBarMenu, StyledBtn } from './SidebarElements'
+import { SideBarContainer, Icon, CloseIcon, SideBarWrapper, SideBarLink, SideBarMenu, StyledBtn, HeaderContainer, BtnWrapper} from './SidebarElements'
 import { useRouter } from 'next/dist/client/router'
+import { Logo } from '../Navbar/NavbarElements'
 
 function MobileMenu({ isOpen, toggle }) {
     const router = useRouter()
     return (
         <SideBarContainer isOpen={isOpen} onClick={toggle}>
-            <Icon onClick={toggle}>
-                <CloseIcon />
-            </Icon>
+            <HeaderContainer>
+                <Link href="/">
+                    <Logo>
+                        <img src="/assets/rootlevel-logo.svg" alt='brand logo' />
+                        {/* <Image src='/assests/rootlevel-logo.svg' height='20px' width='20px' alt='brand logo' /> */}
+                    </Logo>
+                </Link>
+                <Icon onClick={toggle}>
+                    <CloseIcon />
+                </Icon>
+            </HeaderContainer>
             <SideBarWrapper>
-                <SideBarMenu>
-                    <Link href="/">
-                        <SideBarLink onClick={toggle}>
-                            Home
-                        </SideBarLink>
-                    </Link>
-
-                    <Link href="/services">
+                <SideBarMenu>  
+                  <Link href="/services">
                         <SideBarLink onClick={toggle}>
                             Services
                         </SideBarLink>
@@ -40,7 +44,9 @@ function MobileMenu({ isOpen, toggle }) {
                             Career
                         </SideBarLink>
                     </Link>
-                <StyledBtn onClick={() => router.push("/contact")}>Get Started</StyledBtn>
+                <BtnWrapper>
+                    <StyledBtn onClick={() => router.push("/contact")}>Get Started</StyledBtn>
+                </BtnWrapper>
                 </SideBarMenu>
             </SideBarWrapper>
         </SideBarContainer>
