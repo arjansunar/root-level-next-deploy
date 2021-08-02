@@ -116,19 +116,19 @@ export const content = {
     ],
     imageInfoSection: [
       {
-        imageURL: "/assets/services/imageInfo/requirement.png",
+        imageURL: "/assets/services/imageInfo/requirement.jpg",
         title: "Analysis and Planning",
         desc: `Requirement Gathering is the beginning yet most prominent part of our development process. No project yields strong and sustainable results without shrewd scrutinous analysis and planning.
                   Our more than qualified team of experts perform detailed analysis to identify our clients' overall requirements ensuring the software performs phenomenally at the end.
                   `,
       },
       {
-        imageURL: "/assets/services/imageInfo/prototyping.png",
+        imageURL: "/assets/services/imageInfo/prototyping.jpg",
         title: "Design & Prototyping",
         desc: `We create eye-catchy designs with the help of the latest tools of designing. After completing ideation, our product team begins to create the ideal solution that our clients' deserve. Prototyping is done inherently during design with the purpose of facilitating the users of the software to assess the proposals of our developers beforehand. The consequent user reviews are noted to perform iterations to the prototype constructing the best prototype for development.`,
       },
       {
-        imageURL: "/assets/services/imageInfo/development.png",
+        imageURL: "/assets/services/imageInfo/development.jpg",
         title: "Development",
         desc: `The development gets started on the preferable platforms with complete transparency. Our Team of expert software developers initiate the development of the software creating all the required components and functionalities of the software.`,
       },
