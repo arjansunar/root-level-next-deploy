@@ -1,131 +1,147 @@
-import styled, { css } from "styled-components"; { }
+import styled, { css } from "styled-components";
 import { useState } from "react";
 import { NavButton } from "../Navbar/NavbarElements";
-import { IoIosArrowForward as Arrow } from 'react-icons/io'
-import { HiArrowRight as ArrowHover } from 'react-icons/hi'
-import { defaultStyles } from '../../defaults/defaults';
+import { IoIosArrowForward as Arrow } from "react-icons/io";
+import { HiArrowRight as ArrowHover } from "react-icons/hi";
+import { defaultStyles } from "../../defaults/defaults";
+//emailjs
+import emailjs from "emailjs-com";
 
 const initalState = {
-    name: '',
-    email: '',
-    // reasonToWord: '',
-    phoneNumber: '',
-    message: '',
+  name: "",
+  email: "",
+  phoneNumber: "",
+  message: "",
 };
 
-
 export default function ContactForm() {
-    const [state, setState] = useState(initalState);
-    const [error, setError] = useState('');
-    const [hover, setHover] = useState(false)
+  const [state, setState] = useState(initalState);
+  const [error, setError] = useState("");
+  const [hover, setHover] = useState(false);
 
-    const handleSubmit = e => {
-        e.preventDefault();
-        console.log('submitted!');
-        console.log(state);
-
-        for (let key in state) {
-            if (state[key] === '') {
-                setError(`You must provide the ${key}`)
-                return
-            }
+  //function to send emails
+  const credentials = {
+    service_id: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+    template_id: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+    user_id: process.env.NEXT_PUBLIC_EMAILJS_USER_ID,
+  };
+  const sendEmail = (target) => {
+    emailjs
+      .sendForm(
+        credentials.service_id,
+        credentials.template_id,
+        target,
+        credentials.user_id
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          setError("Please try again later...");
+          console.log(error.text);
         }
-        //checking if the phone number is valid
-        if (isNaN(state.phoneNumber || state.phoneNumber.length == 10)) {
-            setError('You must provide a valid number')
-        } else
-            setError('');
-        // const regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-        // const test = regex.test(state.email);
-        // console.log(test);
+      );
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    for (let key in state) {
+      if (state[key] === "") {
+        setError(`You must provide the ${key}`);
+        return;
+      }
+    }
+    //checking if the phone number is valid
+    if (isNaN(state.phoneNumber) || state.phoneNumber.length != 10) {
+      setError("You must provide a valid number");
+    } else {
+      sendEmail(e.target);
+      setError("");
+    }
+    // const regex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+    // const test = regex.test(state.email);
+  };
 
-        console.log("Succeeded!!!")
-    };
+  const handleInput = (e) => {
+    const inputName = e.currentTarget.name;
+    const value = e.currentTarget.value;
 
-    const handleInput = e => {
-        const inputName = e.currentTarget.name;
-        const value = e.currentTarget.value;
-
-        setState(prev => ({ ...prev, [inputName]: value }));
-    };
-    return (
-        <FormWrapper>
-
-            <StyledForm onSubmit={handleSubmit}>
-                <StyledLabel htmlFor="name">Full Name</StyledLabel>
-                <StyledInput
-                    type="text"
-                    name="name"
-                    value={state.name}
-                    onChange={handleInput}
-                    placeholder="name"
-                />
-                <StyledLabel htmlFor="email">Email Address</StyledLabel>
-                <StyledInput
-                    type="email"
-                    name="email"
-                    value={state.email}
-                    onChange={handleInput}
-                    placeholder="email"
-
-                />
-                <StyledLabel htmlFor="number">Phone Number</StyledLabel>
-                <StyledInput
-                    type=""
-                    name="phoneNumber"
-                    value={state.phoneNumber}
-                    onChange={handleInput}
-                    placeholder="phone number"
-
-                />
-                <StyledLabel htmlFor="message">Tell us something about your project</StyledLabel>
-                <StyledTextArea
-                    name="message"
-                    value={state.message}
-                    onChange={handleInput}
-                    placeholder="description"
-                />
-                {error && (
-                    <StyledError>
-                        <p>{error}</p>
-                    </StyledError>
-                )}
-                <ButtonWrapper>
-                    <StyledButton type="submit"
-                        onMouseEnter={
-                            () => setHover(true)
-                        }
-                        onMouseLeave={
-                            () => setHover(false)
-                        }
-                    >Send message
-                        <span>{hover ? <ArrowHover /> : <Arrow />}</span>
-                    </StyledButton>
-                </ButtonWrapper>
-            </StyledForm>
-        </FormWrapper>
-    )
+    setState((prev) => ({ ...prev, [inputName]: value }));
+  };
+  return (
+    <FormWrapper>
+      <StyledForm onSubmit={handleSubmit}>
+        <StyledLabel htmlFor="name">Full Name</StyledLabel>
+        <StyledInput
+          type="text"
+          name="name"
+          value={state.name}
+          onChange={handleInput}
+          placeholder="name"
+        />
+        <StyledLabel htmlFor="email">Email Address</StyledLabel>
+        <StyledInput
+          type="email"
+          name="email"
+          value={state.email}
+          onChange={handleInput}
+          placeholder="email"
+        />
+        <StyledLabel htmlFor="number">Phone Number</StyledLabel>
+        <StyledInput
+          type=""
+          name="phoneNumber"
+          value={state.phoneNumber}
+          onChange={handleInput}
+          placeholder="phone number"
+        />
+        <StyledLabel htmlFor="message">
+          Tell us something about your project
+        </StyledLabel>
+        <StyledTextArea
+          name="message"
+          value={state.message}
+          onChange={handleInput}
+          placeholder="description"
+        />
+        {error && (
+          <StyledError>
+            <p>{error}</p>
+          </StyledError>
+        )}
+        <ButtonWrapper>
+          <StyledButton
+            type="submit"
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+          >
+            Send message
+            <span>{hover ? <ArrowHover /> : <Arrow />}</span>
+          </StyledButton>
+        </ButtonWrapper>
+      </StyledForm>
+    </FormWrapper>
+  );
 }
 
-
 const FormWrapper = styled.div`
-    margin-top: 5rem;
-    height:fit-content;
-    max-width: 704px;
-    width: 90%;
-    border-radius:0.2rem;
-    background-color: #fff;
-    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.30);
-    -webkit-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.30);
-    -moz-box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.30);
-`
+  margin-top: 5rem;
+  height: fit-content;
+  max-width: 704px;
+  width: 90%;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.3);
+`;
 
 const ButtonWrapper = styled.div`
-    margin-top: 1rem;
-    display: flex;
-    align-items:center;
-    justify-content: center;
-`
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 const sharedStyles = css`
   background-color: #eee;
   height: 40px;
@@ -137,8 +153,8 @@ const sharedStyles = css`
 `;
 
 const StyledLabel = styled.label`
-    color: #767683;
-`
+  color: #767683;
+`;
 
 const StyledForm = styled.form`
   width: 100%;
@@ -152,10 +168,7 @@ const StyledForm = styled.form`
 const StyledInput = styled.input`
   display: block;
   width: 100%;
-  ${sharedStyles}
-
-  /* & ::placeholder{} */
-  
+  ${sharedStyles}/* & ::placeholder{} */
 `;
 
 const StyledTextArea = styled.textarea`
@@ -178,47 +191,44 @@ const StyledTextArea = styled.textarea`
 //   box-sizing: border-box;
 // `;
 const StyledButton = styled(NavButton)`
-    font-family: 'Poppins';
-    font-weight: 600;
-    font-size: 1.5rem;
-    width: fit-content;
-    max-width: none;
-    padding: 1rem 2.5rem;
-    background: ${defaultStyles.brandColor};
-    color: #fff;
-    border-radius: 500px;
-    text-transform: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: fit-content;
+  max-width: none;
+  padding: 1rem 2.5rem;
+  background: ${defaultStyles.brandColor};
+  color: #fff;
+  border-radius: 500px;
+  text-transform: none;
 
-    & span{
-        margin-top: 5px;
-    }
-    @media screen{
-        display:flex;
-        align-items:center
-    }
+  & span {
+    margin-top: 5px;
+  }
+  @media screen {
+    display: flex;
+    align-items: center;
+  }
 
-    @media (max-width: 600px){
-        padding: 1rem 2rem;
-    }
+  @media (max-width: 600px) {
+    padding: 1rem 2rem;
+  }
 
-    @media (max-width: 500px){
+  @media (max-width: 500px) {
     font-size: 1.3rem;
+  }
+
+  @media (max-width: 450px) {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+
+    & span {
+      margin-top: 1px;
     }
-
-    @media (max-width: 450px){
-        padding: .8rem 1.2rem;
-        font-size: 1rem;
-
-        & span{
-            margin-top: 1px;
-        }
-    }
-    
-
-`
+  }
+`;
 const StyledError = styled.div`
   color: red;
   font-weight: 800;
   margin: 0 0 40px 0;
 `;
-
