@@ -6,11 +6,11 @@ const partnerImages = [
   { path: "/assets/home/partners/eagle-eye-logo.png" },
   { path: "/assets/home/partners/jones-logo.png" },
   { path: "/assets/home/partners/partner-3.svg" },
-  { path: "/assets/home/partners/partner-4.svg" },
-  { path: "/assets/home/partners/partner-4.svg" },
-  { path: "/assets/home/partners/partner-3.svg" },
-  { path: "/assets/home/partners/partner-2.svg" },
-  { path: "/assets/home/partners/partner-1.svg" },
+  //   { path: "/assets/home/partners/partner-4.svg" },
+  //   { path: "/assets/home/partners/partner-4.svg" },
+  //   { path: "/assets/home/partners/partner-3.svg" },
+  //   { path: "/assets/home/partners/partner-2.svg" },
+  //   { path: "/assets/home/partners/partner-1.svg" },
 ];
 
 function PartnerSection() {
@@ -33,7 +33,7 @@ const Section = styled.section`
 `;
 const ImageWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
   max-width: 780px;
   grid-column-gap: 20px;
